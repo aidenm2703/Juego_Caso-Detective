@@ -22,6 +22,10 @@ const CASE_CONTEXT = {
   4: { victimRef: 'a Aurora', crime: 'el envenenamiento', moment: 'el entreacto de la gala' },
   5: { victimRef: 'a Cosme Aldana', crime: 'la muerte', moment: 'el trayecto nocturno' },
   6: { victimRef: 'con el archivo', crime: 'el incendio', moment: 'la madrugada del incendio' },
+  7: { victimRef: 'con Sergio Ordóñez', crime: 'el rapto', moment: 'la noche de la subasta' },
+  8: { victimRef: 'con Aldo Castel', crime: 'la desaparición', moment: 'esa noche en el teatro' },
+  9: { victimRef: 'con Olga Ferrán', crime: 'el fraude', moment: 'aquellos días en el fondo' },
+  10: { victimRef: 'con Iván Curiel', crime: 'el accidente', moment: 'esa mañana en la feria' },
 }
 
 /* Pseudo-aleatoreidad estable por sospechoso. */
@@ -77,7 +81,7 @@ function buildQuestions(caseObj, suspect, ctx, guilty) {
       question: `Hay quien dice que ${suspect.motive.trim().replace(/[.!]+$/, '')}. ¿Qué respondes?`,
       answer: guilty
         ? '«Eso es una mentira calculada. Quien me acusa debería explicar por qué la escena no tiene puertas forzadas reales.» — responde demasiado rápido, sin dejar pausas para interrumpir.'
-        : '«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.',
+        : `«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.`,
       reaction: guilty ? 'EVASIVE' : suspicionTense ? 'NERVOUS' : 'TENSE',
       note: guilty
         ? 'Cambió de tema al instante y al insistirle se pasó la lengua por los labios y desvió la mirada hacia la puerta. Fue la única pregunta que intentó cerrar sola.'

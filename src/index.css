@@ -2502,3 +2502,26 @@ body {
 
 .iq-reaction-chip.busy { animation: chip-pulse 0.7s ease infinite; }
 @keyframes chip-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+
+/* ============================================================
+   Revelación final: "La respuesta del caso"
+   ============================================================ */
+.resolution-reveal { display: grid; gap: 10; }
+.resolution-suspect {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  background: linear-gradient(150deg, rgba(255, 209, 102, 0.08), rgba(10, 12, 17, 0.4));
+}
+.resolution-suspect img {
+  border-radius: 14px;
+  border: 1px solid var(--border-strong);
+  background: rgba(10, 12, 17, 0.6);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+  flex-shrink: 0;
+}
+.resolution-suspect-info { min-width: 0; display: grid; gap: 2px; }
+.resolution-suspect-info .report-line { margin: 2px 0 0; }

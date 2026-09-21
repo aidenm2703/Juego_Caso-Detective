@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams, useOutletContext } from 'react-router-dom
 import { motion } from 'framer-motion'
 import {
   CheckCircle2, XCircle, FileSearch, Trophy, ArrowLeft, ArrowRight,
-  Send, ScrollText, ShieldAlert, Clock, Target, Fingerprint,
+  Send, ScrollText, Clock, Target, Fingerprint, KeyRound,
 } from 'lucide-react'
 import { api } from '../services/api.js'
 import { submitInvestigationToN8n } from '../services/n8n.js'
@@ -237,12 +237,37 @@ export default function Results() {
           </div>
         )}
 
-        <div className="report-block">
-          <div className="panel-title" style={{ marginBottom: 8 }}>
-            <span className="ico" style={{ color: 'var(--amber)' }}><ShieldAlert size={16} aria-hidden="true" /></span>
-            Resolución del caso
+        <div className="report-block resolution-reveal">
+          <div className="panel-title" style={{ marginBottom: 10 }}>
+            <span className="ico" style={{ color: 'var(--amber)' }}><KeyRound size={16} aria-hidden="true" /></span>
+            La respuesta del caso
           </div>
-          <p className="muted" style={{ fontSize: 13.5 }}>{caseData.solution}</p>
+
+          <div className="resolution-suspect">
+            <img src={`/suspects/${correctSuspect.id}.svg`} alt={`Retrato de ${correctSuspect.name}`} width="104" height="104" loading="lazy" />
+            <div className="resolution-suspect-info">
+              <span className="page-kicker" style={{ marginBottom: 2 }}>El responsable era</span>
+              <h3 style={{ fontSize: 20 }}>{correctSuspect.name}</h3>
+              <p className="muted" style={{ fontSize: 13 }}>{correctSuspect.profession} · {correctSuspect.age} años</p>
+              <div className="report-line">
+                <span className="k">Motivo</span>
+                <span className="v">{correctSuspect.motive}</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="report-line">
+            <span className="k">Pruebas contundentes</span>
+            <span className="v right">
+              {caseData.correctEvidenceIds.map((eid) => evidenceById[eid]?.title).filter(Boolean).join(' · ') || '—'}
+            </span>
+          </div>
+          <div className="report-line">
+            <span className="k">Cometido</span>
+            <span className="v">{caseData.category}</span>
+          </div>
+
+          <p className="muted" style={{ fontSize: 13.5, marginTop: 10, marginBottom: 0 }}>{caseData.solution}</p>
         </div>
       </div>
 

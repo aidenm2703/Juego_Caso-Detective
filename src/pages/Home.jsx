@@ -6,9 +6,17 @@ import LoadingState from '../components/LoadingState.jsx'
 import { isMusicEnabled, play, toggleMusic } from '../services/sound.js'
 
 export default function Home() {
+  const [cases, setCases] = useState([])
   const [caseFile, setCaseFile] = useState(null)
   const [ambienceOn, setAmbienceOn] = useState(isMusicEnabled())
-  useEffect(() => { api.getCases().then((cases) => setCaseFile(cases.find((item) => item.id === 1) ?? cases[0])).catch(() => {}) }, [])
+  useEffect(() => {
+    api.getCases()
+      .then((list) => {
+        setCases(list)
+        setCaseFile(list.find((item) => item.id === 1) ?? list[0])
+      })
+      .catch(() => {})
+  }, [])
   return <main className="detective-office">
     <div className="window-rain" aria-hidden="true"><i /><i /><i /><i /><i /></div>
     <div className="office-lamp" aria-hidden="true"><span /></div><div className="desk-surface" aria-hidden="true" />
@@ -20,7 +28,7 @@ export default function Home() {
       {caseFile ? <Link to={`/case/${caseFile.id}`} className="open-folder"><FolderOpen size={17} />ABRIR EXPEDIENTE <ArrowRight size={15} /></Link> : <LoadingState message="Localizando expediente…" />}
     </section>
     <aside className="desk-clippings" aria-label="Notas de investigación"><p>23:47</p><strong>GALERÍA MARLOWE</strong><span>La ventana no explica la escena.</span><p className="red-pencil">revisar entrada trasera</p></aside>
-    <div className="coffee-ring" aria-hidden="true" /><Link className="office-archive" to="/cases"><span>ARCHIVO GENERAL</span><b>06</b> expedientes abiertos</Link>
+    <div className="coffee-ring" aria-hidden="true" /><Link className="office-archive" to="/cases"><span>ARCHIVO GENERAL</span><b>{(cases.length || 6).toString().padStart(2, '0')}</b> expedientes abiertos</Link>
     <button className="ambience-control" type="button" onClick={() => { const next = toggleMusic(); setAmbienceOn(next); play('click') }} aria-pressed={ambienceOn} aria-label={ambienceOn ? 'Desactivar ambiente sonoro' : 'Activar ambiente sonoro'}>{ambienceOn ? <Volume2 size={14} /> : <VolumeX size={14} />} {ambienceOn ? 'AMBIENTE: ON' : 'AMBIENTE: OFF'}</button>
   </main>
 }

@@ -277,7 +277,7 @@ HOME → CASOS → /case/:id
   → clasificación actualizada
 ```
 
-**Idioma:** toda la interfaz, datos de los 6 casos, pistas y soluciones están en español
+**Idioma:** toda la interfaz, datos de los 10 casos, pistas y soluciones están en español
 (`index.html lang="es"`, `format.js` con etiquetas de dificultad/tipo/estado en ES y fechas `es-ES`).
 
 **Progresión por actos:** cada caso define `acts: [{name, unlockAt, text}]`. El acto activo se
@@ -286,7 +286,7 @@ deriva del tiempo transcurrido (`getCurrentActIndex` en `utils/gameLogic.js`); l
 algunos sospechosos se desbloquean según su campo `act` (`areNotesVisible`). La pista de pulso
 de evidencia descarta el material bloqueado y, si no hay ninguno aún, avisa sin consumirse.
 
-**Retratos:** 36 retratos SVG deterministas en `public/suspects/{id}.svg` (uno por sospechoso).
+**Retratos:** 60 retratos SVG deterministas en `public/suspects/{id}.svg` (uno por sospechoso).
 Se renderizan con `<img loading="lazy">` en los retratos de `CaseCard` (tira "afuera" en la sala de
 casos), en el rail/portada de `InterrogationRoom` y en las opciones de `FinalVerdict`. Al ser locales,
 funcionan en modo offline.
@@ -383,7 +383,7 @@ fix: resolve gameplay issues
 | Offline / datos precargados | ✅ | `data/database.js` + fallback en `api.js` + badge Navbar |
 | Sonidos + música | ✅ | `services/sound.js` (Web Audio) + toggles Navbar |
 | Briefing de misión | ✅ | `CaseBriefing.jsx` gate el cronómetro |
-| 6 casos / 6 sospechosos | ✅ | `db.json` (36 sospechosos, 54 evidencias, único culpable por caso) |
+| 10 casos / 6 sospechosos | ✅ | `db.json` (60 sospechosos, 90 evidencias, único culpable por caso, resoluciones distintas) |
 | Progresión por ACTOS | ✅ | `acts` en datos + `getCurrentActIndex`/`isEvidenceLocked`/`areNotesVisible` + candados en UI |
 | Retratos de sospechosos | ✅ | `public/suspects/{id}.svg` + `<img>` en `CaseCard`/`InterrogationRoom`/`FinalVerdict` |
 | Interrogatorio con micro-expresiones | ✅ | `InterrogationRoom.jsx` + campo `interrogation` en datos + señales en `FinalVerdict` |
@@ -407,12 +407,16 @@ fix: resolve gameplay issues
 
 - [x] `npm install && npm run build` compilan sin errores.
 - [x] API probada: `GET /cases`, `GET /cases/1`, `GET /suspects?caseId=1`, `POST /results`, `PUT /players/1`.
-- [x] db.json con 6 casos en español, 36 sospechosos (con `motive`/`notes`/`act`), 54 evidencias (con `act`/`relevant`), `acts` por caso y jugador inicial.
+- [x] db.json con 10 casos en español (3 FÁCIL / 4 MEDIA / 3 DIFÍCIL), 60 sospechosos (con `motive`/`notes`/`act`), 90 evidencias (con `act`/`relevant`), `acts` por caso y jugador inicial.
 - [x] Consistencia verificada: cada caso tiene exactamente 3 evidencias `relevant` == `correctEvidenceIds` y un único `correctSuspectId` entre sus 6 sospechosos.
 - [x] `src/data/database.js` regenerado desde `db.json` (copia embebida actualizada).
-- [x] 36 retratos SVG generados y presentes en `public/suspects/`.
-- [x] `scripts/generate-interrogation.mjs`: los 36 sospechosos tienen `interrogation` con 5 preguntas (`type/act/question/answer/reaction/note`); `db.json` y `src/data/database.js` regenerados (verificado 36/36).
+- [x] 60 retratos SVG generados y presentes en `public/suspects/`.
+- [x] `scripts/generate-interrogation.mjs`: los 60 sospechosos tienen `interrogation` con 5 preguntas (`type/act/question/answer/reaction/note`); `db.json` y `src/data/database.js` regenerados (verificado 60/60).
 - [x] Fallback offline: juego completo jugable sin json-server (`npm run dev`).
 - [x] Motor de IA: `services/ai.js` habla con `/chat/completions` (streaming SSE), clasifica la respuesta en `CALM/TENSE/NERVOUS/EVASIVE/CONTRADICTS` y, sin `VITE_AI_KEY`, la sala vuelve al banco offline con idéntica presupuesto de 5 preguntas.
+- [x] IA personalizada: el sistema permite preguntar de cualquier tema y el personaje responde para luego retomar el caso (prompt de actuación en `services/ai.js`).
+- [x] Revelación final: `Results.jsx` muestra el panel **La respuesta del caso** (sospechoso con retrato, motivo, pruebas contundentes y solución completa).
+- [x] `scripts/expand-cases.mjs`: 4 casos nuevos (ids 7–10) con `correctSuspectId` y `correctEvidenceIds` consistentes (validado 10/10).
+- [x] `scripts/generate-portraits.mjs`: retratos generados para los nuevos sospechosos (60/60 presentes).
 - [x] Audio verificado en build; construir con Web Audio no requiere archivos.
 - [x] Sin pantallas falsas ni botones decorativos.

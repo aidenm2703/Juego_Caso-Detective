@@ -12,13 +12,13 @@ pondera la evidencia y presenta tu acusación antes de que se agote el tiempo.
 
 ## Features
 
-- **6 casos completos** en español (2 FÁCIL / 2 MEDIA / 2 DIFÍCIL), **6 sospechosos** y **9 evidencias** por caso (36 sospechosos y 54 evidencias en total) — cada caso tiene un único culpable.
+- **10 casos completos** en español (3 FÁCIL / 4 MEDIA / 3 DIFÍCIL), **6 sospechosos** y **9 evidencias** por caso (60 sospechosos y 90 evidencias en total), cada uno con **una resolución distinta** — cada caso tiene un único culpable.
 - **Interrogatorio con micro-expresiones** — el corazón del juego: citas a los sospechosos en una sala de interrogatorios y les haces preguntas (alibi, relación, motivo, general, prueba). Cada respuesta dispara una **reacción** que debes leer: *tranquilo, tenso, nervioso, evasivo o SE CONTRADICE*, con animación del retrato, monitor de **presión psicológica** y un registro de "señales" que se archiva en el expediente para decidir el veredicto.
-- **Motor de IA conectado (interrogatorio en vivo)** — con una clave de API (Groq/OpenAI/OpenRouter) escribes **tus propias preguntas** al sospechoso y este responde **en tiempo real (streaming)** interpretando el papel: vacila, se pone a la defensiva, cambia ligeramente la coartada… Cada pregunta libre se clasifica en un `reaction` para tu registro de señales. Sin clave, el juego usa el banco offline con idéntica experiencia.
+- **Motor de IA conectado (interrogatorio en vivo)** — con una clave de API (Groq/OpenAI/OpenRouter) escribes **tus propias preguntas** al sospechoso y este responde **en tiempo real (streaming)**, con carácter propio: puedes preguntarle de cualquier tema (gustos, familia, opiniones) y responde como persona… para luego **retomar el caso** con un comentario personal. Cada respuesta se clasifica en un `reaction` para tu registro de señales. Sin clave, un motor local contextual da respuestas progresivas con la misma experiencia.
 - **Progresión por ACTOS** — cada investigación avanza en 3 actos que se desbloquean según el tiempo transcurrido: las evidencias de actos futuros aparecen **bloqueadas**, algunos sospechosos solo se pueden citar más adelante, y la pregunta de la **prueba** (la confrontación con la evidencia clave) está disponible en el acto final. Todo esto hace los casos más largos y difíciles de adivinar.
 - **Flujo interactivo por pasos** — recorrido guiado (**Escena → Interrogatorio → Evidencia → Veredicto**) donde cada paso se desbloquea al interactuar. Las evidencias aparecen **veladas** y solo se revelan al tocarlas. En la fase de intel puedes alternar entre **INTERROGATORIO** y **EXPEDIENTE** (dashboard de lectura: resumen, escena, informes y fichas).
 - **Decisión entre opciones** — el paso final es un tablero de **veredicto por opciones**: los 6 sospechosos se muestran como tarjetas con retrato y una **ficha de señales** (lectura corporal del interrogatorio); eliges al culpable antes de presentar la acusación.
-- **Retratos de los sospechosos** — 36 retratos SVG locales generados (`public/suspects/{id}.svg`) para que conectes mejor con cada personaje; funcionan incluso sin conexión y también se muestran **afuera**, en las tarjetas de la sala de casos.
+- **Retratos de los sospechosos** — 60 retratos SVG locales generados (`public/suspects/{id}.svg`) para que conectes mejor con cada personaje; funcionan incluso sin conexión y también se muestran **afuera**, en las tarjetas de la sala de casos.
 - **Tarjetas de caso informativas** — además del título, dificultad y estado, cada tarjeta muestra la **descripción del caso**, la víctima, la localización y una **tira de retratos** con los 6 sospechosos de ese caso.
 - **Estética de videojuego** — reconstrucción visual: fondo con aurora animada, viñeta cinematográfica, títulos con gradiente y glow, botones arcade, hero del Home rediseñado con estadísticas, y una sala de interrogatorios escenográfica de dos planos.
 - **Base de datos local precargada** — el juego corre de inmediato sin json-server; lee de una copia embebida cuando la API no responde.
@@ -219,8 +219,8 @@ See comments inside each Code node for guidance.
 10. Usa el **Protocolo de pistas** si te atascas (cada pista cuesta −500 puntos).
 11. En **VEREDICTO**, elige al culpable **entre las opciones** (cada fibra muestra las señales de lenguaje corporal que archivaste) y marca al menos una evidencia.
 12. Pulsa **PRESENTAR VEREDICTO** → confirma en el modal.
-13. Consulta tu resultado, rango, reporte y la resolución del caso.
-14. La clasificación y tu perfil se actualizan automáticamente.
+13. En el reporte, el panel **LA RESPUESTA DEL CASO** desvela quién era el responsable (con retrato), su motivo, las pruebas contundentes y la resolución completa del caso.
+14. Consulta tu puntaje, rango y el reporte; la clasificación y tu perfil se actualizan automáticamente.
 
 > Las tarjetas de la **sala de casos** ya muestran la descripción, la víctima, la localización y los 6 retratos de cada caso, para que decidas qué caso tomar antes de entrar.
 
@@ -232,7 +232,7 @@ See comments inside each Code node for guidance.
 case-404/
 ├── public/
 │   ├── favicon.svg
-│   └── suspects/           # 36 retratos SVG de sospechosos ({id}.svg)
+│   └── suspects/           # 60 retratos SVG de sospechosos ({id}.svg)
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.jsx
@@ -288,7 +288,9 @@ case-404/
 │   ├── main.jsx
 │   └── index.css
 ├── scripts/
-│   └── generate-interrogation.mjs   # Genera el campo `interrogation` y la base embebida
+│   ├── expand-cases.mjs                   # Añade casos completos (10 en total) a db.json
+│   ├── generate-portraits.mjs             # Genera los retratos SVG que falten en public/suspects
+│   └── generate-interrogation.mjs         # Genera el campo `interrogation` y la base embebida
 ├── n8n/
 │   ├── case404-workflow.json
 │   └── workflow-screenshot.png
