@@ -1,0 +1,27 @@
+{
+  "name": "case-404",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CASE 404 — Detective Investigation Game. React + Vite + json-server + n8n.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "json-server --watch db.json --port 3001",
+    "dev:full": "concurrently -n API,APP -c yellow,cyan \"npm:server\" \"npm:dev\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.453.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.1.0",
+    "json-server": "^0.17.4",
+    "vite": "^5.4.10"
+  }
+}

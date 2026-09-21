@@ -1,0 +1,3210 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Detective",
+      "codename": "OSIRIS",
+      "rank": "ROOKIE",
+      "casesSolved": 0,
+      "casesFailed": 0,
+      "totalScore": 0,
+      "averageAccuracy": 0,
+      "bestRank": "-",
+      "hintsUsed": 0,
+      "joinedAt": "2026-09-01T09:00:00.000Z"
+    }
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "caseNumber": "404-001",
+      "title": "El Asesinato de la Galería",
+      "category": "Homicidio",
+      "difficulty": "MEDIUM",
+      "status": "AVAILABLE",
+      "timeLimit": 900,
+      "maxScore": 11000,
+      "posterHue": 4,
+      "location": "Galería Marlowe, Ala Este",
+      "date": "2026-09-12",
+      "victim": "Víctor Marlowe, 61 años, dueño de la galería",
+      "brief": "Aparece muerto en el despacho cerrado del ala este durante una visita privada. Forzaron la cerradura del pasillo de servicio y dejaron una ventana entreabierta. Pero la escena está demasiado montada.",
+      "summary": "Durante la inauguración privada de su nueva colección, el dueño de la galería, Víctor Marlowe, apareció muerto en su despacho del ala este. La puerta estaba cerrada por dentro, el pasillo de servicio tenía la cerradura forzada y una ventana permanecía entreabierta. Desde hace meses, el dinero se fuga de las cuentas de la galería. Seis personas estuvieron cerca de él esa noche y todas tienen algo que ocultar.",
+      "acts": [
+        {
+          "name": "El hallazgo",
+          "unlockAt": 0,
+          "text": "El cuerpo se encontró pasada la medianoche. Se hacen las primeras entrevistas: el curador, la coleccionista rival, el guardia de turno y el resto del personal que asistió a la inauguración."
+        },
+        {
+          "name": "La contabilidad",
+          "unlockAt": 300,
+          "text": "Una auditoría exprés desvela facturas falsas por 'restauraciones' que jamás se hicieron y cuadros dados de baja sin que nadie los viera salir."
+        },
+        {
+          "name": "La noche del crimen",
+          "unlockAt": 600,
+          "text": "Llegan las grabaciones de la entrada trasera y el volcado del teléfono de la víctima. Por fin se puede reconstruir la última hora de Marlowe."
+        }
+      ],
+      "correctSuspectId": 101,
+      "correctEvidenceIds": [
+        206,
+        207,
+        209
+      ],
+      "hints": [
+        {
+          "id": 1,
+          "title": "Fuga de perfil",
+          "description": "Desvela las notas de investigación de un sospechoso, incluido su motivo oculto."
+        },
+        {
+          "id": 2,
+          "title": "Pulso de evidencia",
+          "description": "Marca una evidencia relevante accesible en el tablero en el acto actual."
+        },
+        {
+          "id": 3,
+          "title": "Eliminación de sospechoso",
+          "description": "Descarta permanentemente a un sospechoso inocente."
+        }
+      ],
+      "solution": "El curador Marco Vélez desviaba dinero de la galería con facturas falsas a nombre de proveedores inexistentes. Marlowe averiguó lo de los cuadros desaparecidos y lo citó en su despacho a las 23:00. Marco entró por la entrada trasera, cruzó el pasillo de servicio, lo golpeó con la estatuilla de bronce y montó el supuesto robo con la ventana entreabierta y el jarrón roto para desviar la sospecha hacia un ladrón externo. Lo delata la grabación de la entrada trasera, el mensaje final de Marlowe y los fragmentos del jarrón, que se rompió desde dentro."
+    },
+    {
+      "id": 2,
+      "caseNumber": "404-002",
+      "title": "El Prototipo Desaparecido",
+      "category": "Espionaje Industrial",
+      "difficulty": "HARD",
+      "status": "AVAILABLE",
+      "timeLimit": 1080,
+      "maxScore": 12000,
+      "posterHue": 210,
+      "location": "Laboratorio Helix Dynamics, piso de la bóveda",
+      "date": "2026-09-15",
+      "victim": "Prototipo 'APEX-9' (sustraído)",
+      "brief": "Un prototipo de IA de nueva generación desapareció de un laboratorio sellado durante la noche. Sin fuerza bruta, sin alarma. Alguien con acceso se lo llevó y sabía exactamente dónde estaba la bóveda cifrada.",
+      "summary": "El prototipo estrella de Helix Dynamics, el APEX-9, desapareció de la bóveda termo-sellada. La alarma nunca saltó, el cifrado de la bóveda está intacto y solo cuatro credenciales pueden abrir esa planta después de medianoche. Esto fue un trabajo interno, planificado y ejecutado con sangre fría. La salida más rápida hacia la calle pasa por el hueco de servicio, pero alguien quiso hacer pasar el robo por un fallo técnico.",
+      "acts": [
+        {
+          "name": "La bóveda intacta",
+          "unlockAt": 0,
+          "text": "Inspección del piso: alarmas en orden, cifrado intacto, huellas mínimas. Se entrevista al personal nocturno y se revisan los accesos."
+        },
+        {
+          "name": "El rastro térmico",
+          "unlockAt": 360,
+          "text": "Las cámaras termográficas del corredor de la bóveda muestran a una figura con un maletín bajo el brazo y unas botas con suela térmica muy llamativas."
+        },
+        {
+          "name": "Las sesiones remotas",
+          "unlockAt": 720,
+          "text": "El análisis de consolas revela sesiones de administrador imposibles: una credencial entra y 'sale' dos veces en tres minutos, y un segundo factor respondido desde el aparcamiento."
+        }
+      ],
+      "correctSuspectId": 203,
+      "correctEvidenceIds": [
+        306,
+        307,
+        309
+      ],
+      "hints": [
+        {
+          "id": 1,
+          "title": "Fuga de perfil",
+          "description": "Desvela las notas de investigación de un sospechoso, incluido su motivo oculto."
+        },
+        {
+          "id": 2,
+          "title": "Pulso de evidencia",
+          "description": "Marca una evidencia relevante accesible en el tablero en el acto actual."
+        },
+        {
+          "id": 3,
+          "title": "Eliminación de sospechoso",
+          "description": "Descarta permanentemente a un sospechoso inocente."
+        }
+      ],
+      "solution": "El ingeniero de seguridad Elías Royce clonó su propia credencial para hacer un pase de entrada falso: su placa entraba al piso de la bóveda mientras un 'fantasma' salía por la escalera de servicio. Abrió la consola remota con la clave de administrador y respondió la verificación de segundo factor con un relé escondido en el aparcamiento. La anomalía pass-back, la sesión con clave de administrador y las botas de suela térmica del termográfico lo confirman: Royce fue quien salió con el maletín."
+    },
+    {
+      "id": 3,
+      "caseNumber": "404-003",
+      "title": "Medianoche en el Hotel 404",
+      "category": "Habitación Cerrada",
+      "difficulty": "EASY",
+      "status": "AVAILABLE",
+      "timeLimit": 720,
+      "maxScore": 9500,
+      "posterHue": 44,
+      "location": "Hotel 404, Habitación 21",
+      "date": "2026-09-18",
+      "victim": "Sr. Ashworth, 54 años, viajante de negocios",
+      "brief": "Un huésped aparece muerto en una habitación cerrada por dentro. La única llave está en la mesita de noche. Dos copas de champán en el fregadero, una ventana abierta y una vecina de puerta que jura que se quedó dormida.",
+      "summary": "El Sr. Ashworth fue hallado sin vida en su habitación del hotel a las 6:00. El gerente tuvo que forzar la puerta cuando nadie respondió a su llamada de salida. La habitación estaba sellada: la llave en la mesita, la ventana abierta al pasillo de incendios y, en el fregadero, una segunda copa aún fría. La dirección del hotel guarda un registro impecable de cada llave y cada entrega. Alguien estuvo con él aquella noche y salió sin dejar rastro aparente.",
+      "acts": [
+        {
+          "name": "Habitación sellada",
+          "unlockAt": 0,
+          "text": "Primera inspección: la puerta estaba cerrada con llave desde dentro, la ventana abierta al patio de incendios y la tarjeta sobre la mesita."
+        },
+        {
+          "name": "Las copas y el hielo",
+          "unlockAt": 240,
+          "text": "En el fregadero hay una segunda copa de champán que no pertenece al servicio de la habitación, y el registro de llaves arroja anomalías."
+        },
+        {
+          "name": "El armario",
+          "unlockAt": 480,
+          "text": "En el armario de la huésped contigua aparecen objetos que no le pertenecen. La historia empieza a desmoronarse."
+        }
+      ],
+      "correctSuspectId": 302,
+      "correctEvidenceIds": [
+        402,
+        404,
+        407
+      ],
+      "hints": [
+        {
+          "id": 1,
+          "title": "Fuga de perfil",
+          "description": "Desvela las notas de investigación de un sospechoso, incluido su motivo oculto."
+        },
+        {
+          "id": 2,
+          "title": "Pulso de evidencia",
+          "description": "Marca una evidencia relevante accesible en el tablero en el acto actual."
+        },
+        {
+          "id": 3,
+          "title": "Eliminación de sospechoso",
+          "description": "Descarta permanentemente a un sospechoso inocente."
+        }
+      ],
+      "solution": "'La Sra. Calloway' es una estafadora veterana. Sirvió el champán, drogó a Ashworth, le robó la tarjeta de la habitación y dejó la puerta entornada para vigilar el pasillo desde su propia puerta. Cuando 'descubrió' el cuerpo, cerró la habitación deslizando por última vez la tarjeta desde fuera, recreando la cerradura interior. La segunda copa fuera de la bandeja del servicio, la cartera vaciada escondida en su armario y la huella en la botella la delatan: estuvo físicamente dentro de la habitación."
+    },
+    {
+      "id": 4,
+      "caseNumber": "404-004",
+      "title": "El Veneno del Telón",
+      "category": "Envenenamiento",
+      "difficulty": "MEDIUM",
+      "status": "AVAILABLE",
+      "timeLimit": 900,
+      "maxScore": 11000,
+      "posterHue": 330,
+      "location": "Teatro Círculo, camerino de la diva",
+      "date": "2026-09-21",
+      "victim": "Aurora Valente, 44 años, soprano",
+      "brief": "La soprano estrella se desploma y muere tras beber de su copa en el entreacto. El análisis forense encuentra digitalina en el vino y en los pétalos de las rosas de su camerino. Nadie entró ni salió del camerino durante el entreacto… según el personal, que se cubre entre sí.",
+      "summary": "Aurora Valente llevaba años siendo la gran voz del Teatro Círculo. Durante el entreacto de la función de gala bebió de su copa y, en veinte minutos, estaba muerta. La digitalina hallada en el vino y en las rosas del ramo apunta a un veneno administrado a sabiendas de su doble afección cardiaca. Seis personas tuvieron acceso al camerino a lo largo de la noche y todas comparten un secreto: el teatro pierde dinero, los estrenos se cancelan y alguien heredará el papel principal.",
+      "acts": [
+        {
+          "name": "La copa envenenada",
+          "unlockAt": 0,
+          "text": "Autopsia e informe de toxicología: digitalina en vino y pétalos. Se entrevista a la compañía y al personal del camerino."
+        },
+        {
+          "name": "La amenaza",
+          "unlockAt": 300,
+          "text": "El ayudante de escenario confiesa un mensaje anónimo de advertencia recibido la noche anterior: 'Quien no cante mañana, salva la voz'."
+        },
+        {
+          "name": "Las flores",
+          "unlockAt": 600,
+          "text": "La cinta del pasillo de camerinos muestra que el ramo no llegó con el resto del regalo institucional: alguien lo cambió veinte minutos antes del entreacto."
+        }
+      ],
+      "correctSuspectId": 401,
+      "correctEvidenceIds": [
+        503,
+        506,
+        508
+      ],
+      "hints": [
+        {
+          "id": 1,
+          "title": "Fuga de perfil",
+          "description": "Desvela las notas de investigación de un sospechoso, incluido su motivo oculto."
+        },
+        {
+          "id": 2,
+          "title": "Pulso de evidencia",
+          "description": "Marca una evidencia relevante accesible en el tablero en el acto actual."
+        },
+        {
+          "id": 3,
+          "title": "Eliminación de sospechoso",
+          "description": "Descarta permanentemente a un sospechoso inocente."
+        }
+      ],
+      "solution": "La suplente Grecia Manso llevaba dos temporadas esperando un hueco en el reparto y sabía de la afección cardiaca de Aurora por conversaciones con el maquillador. Purificó digitalina de dedalera, impregnó las rosas del ramo sustituto y luego sumergió una ampolleta en la copa durante la entrega de flores. La cinta del pasillo que muestra el cambio de ramo, el mensaje de advertencia al ayudante y el vial con residuos hallado en el dobladillo de su vestuario la señalan sin ambigüedad."
+    },
+    {
+      "id": 5,
+      "caseNumber": "404-005",
+      "title": "El Expreso de la Medianoche",
+      "category": "Homicidio",
+      "difficulty": "HARD",
+      "status": "AVAILABLE",
+      "timeLimit": 1080,
+      "maxScore": 12000,
+      "posterHue": 160,
+      "location": "Tren nocturno Alfa-9, coche B, compartimento 4",
+      "date": "2026-09-24",
+      "victim": "Cosme Aldana, 58 años, abogado",
+      "brief": "El pasajero del compartimento 4 aparece apuñalado en su litera durante la noche. Puerta cerrada con pestillo, ventana sellada y la cámara del pasillo no registra a nadie entrando. Todos los demás pasajeros del coche B tienen coartadas cruzadas… y todas son mentira a medias.",
+      "summary": "El abogado Cosme Aldana viajaba solo en el expreso Alfa-9 cuando amaneció apuñalado en su litera. El compartimento estaba cerrado con pestillo, la ventana sellada y la cámara del pasillo no muestra a nadie acercándose a la puerta. El tren llevaba cuatro horas sin paradas. Eso reduce el caso a un único corredor: el coche B y sus seis ocupantes, todos con algo que ocultar sobre el viejo expediente que Aldana llevaba en un maletín reforzado.",
+      "acts": [
+        {
+          "name": "La cerradura sin rastro",
+          "unlockAt": 0,
+          "text": "Inspección del compartimento: pestillo ileso, ventana sellada, cámara ciega en el tramo exacto. Se entrevista a los seis pasajeros del coche B."
+        },
+        {
+          "name": "El expediente",
+          "unlockAt": 360,
+          "text": "En el equipaje de Aldana aparece una carta sin enviar y copias de una auditoría a un despacho de abogados que nadie mencionó por su cuenta."
+        },
+        {
+          "name": "La reconstrucción",
+          "unlockAt": 720,
+          "text": "La revisión fina del vagón revela que la cámara del pasillo fue desplazada unos grados con una pértiga desde el aseo contiguo, y aparece el instrumento."
+        }
+      ],
+      "correctSuspectId": 503,
+      "correctEvidenceIds": [
+        602,
+        605,
+        607
+      ],
+      "hints": [
+        {
+          "id": 1,
+          "title": "Fuga de perfil",
+          "description": "Desvela las notas de investigación de un sospechoso, incluido su motivo oculto."
+        },
+        {
+          "id": 2,
+          "title": "Pulso de evidencia",
+          "description": "Marca una evidencia relevante accesible en el tablero en el acto actual."
+        },
+        {
+          "id": 3,
+          "title": "Eliminación de sospechoso",
+          "description": "Descarta permanentemente a un sospechoso inocente."
+        }
+      ],
+      "solution": "El socio León Quiroga desviaba fondos del bufete y sabía que Aldana llevaba la auditoría al fiscal. Viajó en otro tren hasta la parada previa, subió con billete pagado en efectivo y desplazó la cámara del pasillo con la pértiga del aseo. Con el pasillo ciego, forzó la puerta con una lámina, apuñaló a Aldana y volvió a su compartimento. Lo delatan la carta de ultimátum que Aldana no llegó a enviar, la copia de la auditoría que solo los dos socios tenían y la huella parcial en la lámina de la puerta."
+    },
+    {
+      "id": 6,
+      "caseNumber": "404-006",
+      "title": "Fuego en la Biblioteca",
+      "category": "Incendio Provocado",
+      "difficulty": "EASY",
+      "status": "AVAILABLE",
+      "timeLimit": 720,
+      "maxScore": 9500,
+      "posterHue": 96,
+      "location": "Biblioteca Municipal Cervantes, archivo histórico",
+      "date": "2026-09-27",
+      "victim": "Archivo histórico municipal (destruido)",
+      "brief": "El archivo histórico queda calcinado la noche anterior a una auditoría que iba a revisar las escrituras de unas fincas municipales. El fuego se originó en el depósito con un acelerante de combustión muy concreta. Los bomberos lo llaman 'fuego limpio': alguien quería que ardiera rápido y sin testigos.",
+      "summary": "A las 3:00 de la madrugada, el depósito de legajos de la Biblioteca Cervantes ardía por completo. La auditoría del lunes iba a cotejar escrituras de tres fincas municipales en manos de una inmobiliaria. El acelerante hallado coincide con un producto que solo se distribuye a flotas profesionales. El vigilante nocturno dormía, la directora estaba fuera de la ciudad y la llave del depósito tenía un uso 'no registrado'.",
+      "acts": [
+        {
+          "name": "El incendio limpio",
+          "unlockAt": 0,
+          "text": "Informe de bomberos y pericial: acelerante de combustión química, tres focos simultáneos en el depósito de legajos."
+        },
+        {
+          "name": "El dinero",
+          "unlockAt": 240,
+          "text": "Intervención de los ficheros contables de la biblioteca: aparece una transferencia reciente y poco prudente de una sociedad inmobiliaria."
+        },
+        {
+          "name": "La llave",
+          "unlockAt": 480,
+          "text": "El registro de accesos al depósito muestra que la llave maestra se usó fuera de horario y la entregan los testigos de la calle."
+        }
+      ],
+      "correctSuspectId": 602,
+      "correctEvidenceIds": [
+        703,
+        705,
+        706
+      ],
+      "hints": [
+        {
+          "id": 1,
+          "title": "Fuga de perfil",
+          "description": "Desvela las notas de investigación de un sospechoso, incluido su motivo oculto."
+        },
+        {
+          "id": 2,
+          "title": "Pulso de evidencia",
+          "description": "Marca una evidencia relevante accesible en el tablero en el acto actual."
+        },
+        {
+          "id": 3,
+          "title": "Eliminación de sospechoso",
+          "description": "Descarta permanentemente a un sospechoso inocente."
+        }
+      ],
+      "solution": "El adjunto del archivo, Pablo Tierno, recibió 50.000 € de la inmobiliaria del empresario Nicolás Ferrán para destruir las escrituras antes de la auditoría. Abrió el depósito con la llave maestra fuera de horario, dejó el acelerante repartido en tres focos y salió por la puerta de servicio. Lo delata la transferencia desde la sociedad inmobiliaria, la grabación de un coche de esa sociedad frente a la biblioteca a las 2:40 y los restos de acelerante en la suela de sus zapatos técnicos."
+    }
+  ],
+  "suspects": [
+    {
+      "id": 101,
+      "caseId": 1,
+      "act": 2,
+      "name": "Marco Vélez",
+      "age": 45,
+      "profession": "Curador de la galería",
+      "relation": "Protegido y mano derecha de Marlowe",
+      "alibi": "Dice que descargaba un embalaje en el muelle de carga entre las 22:30 y las 23:10.",
+      "description": "Educado, enrocado cuando se le presiona. Lleva el día a día de la galería desde que Marlowe enfermó.",
+      "suspicionLevel": "HIGH",
+      "notes": "Contabilidad: cuadros dados de baja como 'restauración'. En su cajón, una factura de marcos por trabajo jamás cobrado.",
+      "motive": "Desviaba fondos de la galería con facturas falsas y Marlowe acababa de descubrir los cuadros desaparecidos.",
+      "interrogation": [
+        {
+          "id": 1011,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Dice que descargaba un embalaje en el muelle de carga entre las 22:30 y las 23:10.",
+          "reaction": "TENSE",
+          "note": "Recitó el guion de su alibi en orden perfecto, con los dedos tamborileando sobre la mesa. Demasiado ensayado para alguien que «no sabía nada»."
+        },
+        {
+          "id": 1012,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Marlowe?",
+          "answer": "Protegido y mano derecha de Marlowe",
+          "reaction": "CALM",
+          "note": "Habla de la víctima en pasado con una frialdad que no encaja con su relato de «cercanía»."
+        },
+        {
+          "id": 1013,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Desviaba fondos de la galería con facturas falsas y Marlowe acababa de descubrir los cuadros desaparecidos. ¿Qué respondes?",
+          "answer": "«Eso es una mentira calculada. Quien me acusa debería explicar por qué la escena no tiene puertas forzadas reales.» — responde demasiado rápido, sin dejar pausas para interrumpir.",
+          "reaction": "EVASIVE",
+          "note": "Cambió de tema al instante y al insistirle se pasó la lengua por los labios y desvió la mirada hacia la puerta. Fue la única pregunta que intentó cerrar sola."
+        },
+        {
+          "id": 1014,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la noche de la galería?",
+          "answer": "«No oculto nada, y este interrogatorio me está hartando.» — cruza los brazos y la voz se le seca a mitad de frase.",
+          "reaction": "NERVOUS",
+          "note": "Respiración audible, pulso visible en la mandíbula. Es la pregunta donde pierde por completo la compostura."
+        },
+        {
+          "id": 1015,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Grabación de la entrada trasera. ¿Todavía lo niegas todo?",
+          "answer": "«No sé de qué habla. Yo no estaba allí. Y quien le dijo eso…» — se detiene, traga saliva y reconstruye la frase desde cero. Antes lo había dicho de carrerilla; ahora titubea hasta en los nombres: primero situó su alibi en Dice que descargaba un embalaje en el muelle d…",
+          "reaction": "CONTRADICTS",
+          "note": "CONTRADICCIÓN: recién había fijado su alibi para esa misma franja y ahora sostiene que «no estaba allí». Los dedos le tiemblan y repite la frase dos veces, cambiando los detalles entre cada repetición."
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "caseId": 1,
+      "act": 1,
+      "name": "Elena Frías",
+      "age": 38,
+      "profession": "Coleccionista rival",
+      "relation": "Enemiga declarada; peleó con Marlowe en público por un cuadro en litigio",
+      "alibi": "Tomó un taxi a las 22:12, confirmado por el portero y el recibo del taxi.",
+      "description": "Genio vivo; discusión pública y a gritos tres noches antes del crimen.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Amenazó con 'cerrarle el local a Marlowe' delante de media sala, pero su cronología es inexpugnable: estaba a kilómetros de distancia.",
+      "motive": "Pelea pública por un cuadro en litigio y amenazas de 'cerrarle el local' ante testigos.",
+      "interrogation": [
+        {
+          "id": 1021,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Tomó un taxi a las 22:12, confirmado por el portero y el recibo del taxi.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 1022,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Marlowe?",
+          "answer": "Enemiga declarada; peleó con Marlowe en público por un cuadro en litigio",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 1023,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Pelea pública por un cuadro en litigio y amenazas de 'cerrarle el local' ante testigos. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 1024,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la noche de la galería?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 1025,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Grabación de la entrada trasera. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "caseId": 1,
+      "act": 1,
+      "name": "Teo Remi",
+      "age": 29,
+      "profession": "Guardia de seguridad",
+      "relation": "Empleado; amonestado hace poco por dormirse en el turno",
+      "alibi": "Rondaba el perímetro en una ruta registrada de 15 minutos desde las 22:40.",
+      "description": "A la defensiva; alianzas de juego rotas y deudas fuertes con una casa de apuestas desconocida.",
+      "suspicionLevel": "LOW",
+      "notes": "Su parte de ronda lleva marcas de hora consistentes. Los manuales de ruta lo descartan del ala este.",
+      "motive": "Deudas fuertes de juego y una amonestación reciente: desesperado por dinero.",
+      "interrogation": [
+        {
+          "id": 1031,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Rondaba el perímetro en una ruta registrada de 15 minutos desde las 22:40.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 1032,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Marlowe?",
+          "answer": "Empleado; amonestado hace poco por dormirse en el turno",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 1033,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Deudas fuertes de juego y una amonestación reciente: desesperado por dinero. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 1034,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la noche de la galería?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 1035,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Grabación de la entrada trasera. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "caseId": 1,
+      "act": 2,
+      "name": "Rosa Iglesias",
+      "age": 51,
+      "profession": "Restauradora",
+      "relation": "Encargada del taller de restauración de la galería",
+      "alibi": "Trabajaba sola con una lámpara en el taller; nadie la vio entre las 22:00 y las 23:20.",
+      "description": "Precisa, callada. Amargada por un recorte de presupuesto que echó la culpa a Marlowe.",
+      "suspicionLevel": "LOW",
+      "notes": "El listado de sus encargos no recoge las 'restauraciones' facturadas. Podría ser cómplice o víctima del fraude.",
+      "motive": "Recorte de presupuesto que puso en riesgo su puesto y rencor contenido hacia la dirección.",
+      "interrogation": [
+        {
+          "id": 1041,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Trabajaba sola con una lámpara en el taller; nadie la vio entre las 22:00 y las 23:20.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 1042,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Marlowe?",
+          "answer": "Encargada del taller de restauración de la galería",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 1043,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Recorte de presupuesto que puso en riesgo su puesto y rencor contenido hacia la dirección. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 1044,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la noche de la galería?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 1045,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Grabación de la entrada trasera. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "caseId": 1,
+      "act": 1,
+      "name": "Iván Soler",
+      "age": 47,
+      "profession": "Contable externo",
+      "relation": "Firma de contabilidad subcontratada por la galería",
+      "alibi": "Dejó la galería a las 21:50; registro de salida del edificio registrado.",
+      "description": "Nervioso, en contra de que la auditoría internara los libros, justo en plena temporada de balances.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "La factura falsa nº117 no lleva su firma, pero sus anotaciones saltaban los totales de las 'restauraciones'.",
+      "motive": "Hizo la vista gorda con el fraude a cambio de que la galería renovara su contrato.",
+      "interrogation": [
+        {
+          "id": 1051,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Dejó la galería a las 21:50; registro de salida del edificio registrado.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 1052,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Marlowe?",
+          "answer": "Firma de contabilidad subcontratada por la galería",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 1053,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Hizo la vista gorda con el fraude a cambio de que la galería renovara su contrato. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 1054,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la noche de la galería?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 1055,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Grabación de la entrada trasera. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "caseId": 1,
+      "act": 1,
+      "name": "Camila Durán",
+      "age": 26,
+      "profession": "Ayudante de sala",
+      "relation": "Gestora del cóctel de la inauguración",
+      "alibi": "Repartiendo bebidas continuamente; el vídeo del salón la muestra hasta las 23:05.",
+      "description": "Atenea, en apuros. Curiosa: hizo varias preguntas por el pasillo de servicio.",
+      "suspicionLevel": "LOW",
+      "notes": "Preguntó por la puerta del pasillo de servicio justo la semana antes de que la forzaran. Casualidad o punta de cadena.",
+      "motive": "Necesita dinero para un familiar enfermo y preguntó demasiado por la puerta del pasillo de servicio.",
+      "interrogation": [
+        {
+          "id": 1061,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Repartiendo bebidas continuamente; el vídeo del salón la muestra hasta las 23:05.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 1062,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Marlowe?",
+          "answer": "Gestora del cóctel de la inauguración",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 1063,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Necesita dinero para un familiar enfermo y preguntó demasiado por la puerta del pasillo de servicio. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 1064,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la noche de la galería?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 1065,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Grabación de la entrada trasera. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "caseId": 2,
+      "act": 1,
+      "name": "Dra. Iris Senna",
+      "age": 52,
+      "profession": "Jefa de I+D",
+      "relation": "Desarrolladora principal del proyecto APEX-9",
+      "alibi": "Salió del edificio a las 21:40, confirmado por el registro de credencial; no volvió esa noche.",
+      "description": "Brillante, reservada. Es propietaria de la patente original de la arquitectura del chip.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "La oferta de una empresa rival la tienta desde hace seis meses, pero los torniquetes biométricos la sitúan fuera del edificio antes de la ventana del robo.",
+      "motive": "Una empresa rival le ofrece un puesto fundador y conserva las patentes del chip sustraído.",
+      "interrogation": [
+        {
+          "id": 2011,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el robo?",
+          "answer": "Salió del edificio a las 21:40, confirmado por el registro de credencial; no volvió esa noche.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 2012,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el proyecto?",
+          "answer": "Desarrolladora principal del proyecto APEX-9",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 2013,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Una empresa rival le ofrece un puesto fundador y conserva las patentes del chip sustraído. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 2014,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de esa noche en el laboratorio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 2015,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Anomalía 'pass-back' de credencial. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "caseId": 2,
+      "act": 1,
+      "name": "Mateo Paz",
+      "age": 26,
+      "profession": "Becario de investigación",
+      "relation": "Becario de turno de noche con acceso a la planta de la bóveda",
+      "alibi": "Estuvo en la cafetería con dos testigos de 23:00 a 1:00.",
+      "description": "Despistado, descuidado, escribe contraseñas de servidores en una libreta sin cifrar.",
+      "suspicionLevel": "LOW",
+      "notes": "Su libreta de contraseñas es una bandera roja, pero su credencial nunca tocó la consola del piso de la bóveda.",
+      "motive": "Contraseñas de servidores sin cifrar sobre su mesa y demasiada curiosidad para un becario.",
+      "interrogation": [
+        {
+          "id": 2021,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el robo?",
+          "answer": "Estuvo en la cafetería con dos testigos de 23:00 a 1:00.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 2022,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el proyecto?",
+          "answer": "Becario de turno de noche con acceso a la planta de la bóveda",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 2023,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Contraseñas de servidores sin cifrar sobre su mesa y demasiada curiosidad para un becario. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 2024,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de esa noche en el laboratorio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 2025,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Anomalía 'pass-back' de credencial. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "caseId": 2,
+      "act": 2,
+      "name": "Elías Royce",
+      "age": 41,
+      "profession": "Ingeniero de seguridad",
+      "relation": "Administrador de los sistemas de acceso y consolas",
+      "alibi": "Dice que estaba en casa; su router se conectó a la VPN de la oficina y registró sesión de 22:44 a 0:02.",
+      "description": "Tranquilo, técnicamente superior a todas las contramedidas del sitio. Conocía al detalle la ventana de reinicio de la bóveda cifrada.",
+      "suspicionLevel": "HIGH",
+      "notes": "su VPN doméstica registró una sesión inactiva mientras ocurrían anomalías de credencial y un inicio de sesión en consola: físicamente imposible de una sola persona salvo que estuviera montado.",
+      "motive": "Único administrador con derechos totales y el único que conocía de memoria la ventana de reinicio de la bóveda.",
+      "interrogation": [
+        {
+          "id": 2031,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el robo?",
+          "answer": "Dice que estaba en casa; su router se conectó a la VPN de la oficina y registró sesión de 22:44 a 0:02.",
+          "reaction": "TENSE",
+          "note": "Recitó el guion de su alibi en orden perfecto, con los dedos tamborileando sobre la mesa. Demasiado ensayado para alguien que «no sabía nada»."
+        },
+        {
+          "id": 2032,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el proyecto?",
+          "answer": "Administrador de los sistemas de acceso y consolas",
+          "reaction": "CALM",
+          "note": "Habla de la víctima en pasado con una frialdad que no encaja con su relato de «cercanía»."
+        },
+        {
+          "id": 2033,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Único administrador con derechos totales y el único que conocía de memoria la ventana de reinicio de la bóveda. ¿Qué respondes?",
+          "answer": "«Eso es una mentira calculada. Quien me acusa debería explicar por qué la escena no tiene puertas forzadas reales.» — responde demasiado rápido, sin dejar pausas para interrumpir.",
+          "reaction": "EVASIVE",
+          "note": "Cambió de tema al instante y al insistirle se pasó la lengua por los labios y desvió la mirada hacia la puerta. Fue la única pregunta que intentó cerrar sola."
+        },
+        {
+          "id": 2034,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de esa noche en el laboratorio?",
+          "answer": "«No oculto nada, y este interrogatorio me está hartando.» — cruza los brazos y la voz se le seca a mitad de frase.",
+          "reaction": "NERVOUS",
+          "note": "Respiración audible, pulso visible en la mandíbula. Es la pregunta donde pierde por completo la compostura."
+        },
+        {
+          "id": 2035,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Anomalía 'pass-back' de credencial. ¿Todavía lo niegas todo?",
+          "answer": "«No sé de qué habla. Yo no estaba allí. Y quien le dijo eso…» — se detiene, traga saliva y reconstruye la frase desde cero. Antes lo había dicho de carrerilla; ahora titubea hasta en los nombres: primero situó su alibi en Dice que estaba en casa; su router se conectó …",
+          "reaction": "CONTRADICTS",
+          "note": "CONTRADICCIÓN: recién había fijado su alibi para esa misma franja y ahora sostiene que «no estaba allí». Los dedos le tiemblan y repite la frase dos veces, cambiando los detalles entre cada repetición."
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "caseId": 2,
+      "act": 1,
+      "name": "Norma Villa",
+      "age": 49,
+      "profession": "Jefa de instalaciones",
+      "relation": "Responsable de llaves y del plan de evacuación",
+      "alibi": "Revisaba la planta baja con el técnico de turno; firma de entrada a las 22:20.",
+      "description": "Metódica, cansada; dos despidos laborales en un año la tienen al límite del presupuesto.",
+      "suspicionLevel": "LOW",
+      "notes": "Tiene copia física de la llave maestra, pero el candado del maletín no fue forzado y la alarma interior no se disparó jamás.",
+      "motive": "Dos despidos recientes y deudas de hipoteca: candidata a una 'corrección' económica oportuna.",
+      "interrogation": [
+        {
+          "id": 2041,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el robo?",
+          "answer": "Revisaba la planta baja con el técnico de turno; firma de entrada a las 22:20.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 2042,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el proyecto?",
+          "answer": "Responsable de llaves y del plan de evacuación",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 2043,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Dos despidos recientes y deudas de hipoteca: candidata a una 'corrección' económica oportuna. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 2044,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de esa noche en el laboratorio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 2045,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Anomalía 'pass-back' de credencial. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "caseId": 2,
+      "act": 2,
+      "name": "Sergio Roca",
+      "age": 33,
+      "profession": "Técnico de turno",
+      "relation": "Atendía incidencias del piso de la bóveda vía consola",
+      "alibi": "En la sala de operaciones desde las 22:15; cámaras internas lo cubren hasta las 0:30.",
+      "description": "Huraño, resentido con la dirección por no promocionarlo a administrador.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Conocía los reinicios de la bóveda, pero sin credencial de administración física no podía abrir la planta restringida.",
+      "motive": "Rencor por el ascenso denegado y acceso operativo a la configuración de la consola.",
+      "interrogation": [
+        {
+          "id": 2051,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el robo?",
+          "answer": "En la sala de operaciones desde las 22:15; cámaras internas lo cubren hasta las 0:30.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 2052,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el proyecto?",
+          "answer": "Atendía incidencias del piso de la bóveda vía consola",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 2053,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Rencor por el ascenso denegado y acceso operativo a la configuración de la consola. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 2054,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de esa noche en el laboratorio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 2055,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Anomalía 'pass-back' de credencial. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "caseId": 2,
+      "act": 1,
+      "name": "Laia Font",
+      "age": 30,
+      "profession": "Analista de registros",
+      "relation": "Revisaba los logs de acceso de la semana del robo",
+      "alibi": "Trabajó desde casa; su credencial no registró entrada alguna esa noche.",
+      "description": "Nerviosa desde el robo; pide de manera insistente acceso a los ficheros de la bóveda.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Sus peticiones de acceso a los logs de la bóveda son posteriores al robo, no anteriores. Más curiosidad que culpabilidad.",
+      "motive": "Quería demostrar un fallo en las auditorías para mejorar su posición; no participó en el robo.",
+      "interrogation": [
+        {
+          "id": 2061,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el robo?",
+          "answer": "Trabajó desde casa; su credencial no registró entrada alguna esa noche.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 2062,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el proyecto?",
+          "answer": "Revisaba los logs de acceso de la semana del robo",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 2063,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Quería demostrar un fallo en las auditorías para mejorar su posición; no participó en el robo. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 2064,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de esa noche en el laboratorio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 2065,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Anomalía 'pass-back' de credencial. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 301,
+      "caseId": 3,
+      "act": 1,
+      "name": "Odile March",
+      "age": 47,
+      "profession": "Recepcionista de noche",
+      "relation": "Personal de recepción del Hotel 404",
+      "alibi": "Detrás del mostrador toda la noche; la cámara del vestíbulo la cubre de principio a fin.",
+      "description": "Cansada, meticulosa con los registros; hizo ella el check-in de Ashworth.",
+      "suspicionLevel": "LOW",
+      "notes": "Las cámaras muestran que nunca dejó el vestíbulo y que la tarjeta de Ashworth jamás se reactivó tras su entrega inicial.",
+      "motive": "Registros impecables en un hotel en apuros: desdeñó cualquier maniobra con llaves.",
+      "interrogation": [
+        {
+          "id": 3011,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Detrás del mostrador toda la noche; la cámara del vestíbulo la cubre de principio a fin.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 3012,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Ashworth?",
+          "answer": "Personal de recepción del Hotel 404",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 3013,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Registros impecables en un hotel en apuros: desdeñó cualquier maniobra con llaves. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 3014,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de aquella noche en el hotel?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 3015,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Segunda copa de champán. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 302,
+      "caseId": 3,
+      "act": 2,
+      "name": "'Sra. Calloway'",
+      "age": 35,
+      "profession": "Consultora 'de negocios'",
+      "relation": "Huésped de la habitación contigua, sin documento en el registro",
+      "alibi": "Jura que durmió toda la noche y que 'no oyó nada hasta la alarma'.",
+      "description": "Cautivadora, sin huellas en el equipaje, pagó en efectivo y su supuesta empresa no existe.",
+      "suspicionLevel": "HIGH",
+      "notes": "En ficheros policiales: cuatro alias coinciden con un perfil de estafadora conocido. Su historia de 'llegué ayer' no tiene entrada en el registro.",
+      "motive": "Perfil de estafadora conocido: cuatro alias, pago en efectivo y sin entrada registrada en el libro de huéspedes.",
+      "interrogation": [
+        {
+          "id": 3021,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Jura que durmió toda la noche y que 'no oyó nada hasta la alarma'.",
+          "reaction": "TENSE",
+          "note": "Recitó el guion de su alibi en orden perfecto, con los dedos tamborileando sobre la mesa. Demasiado ensayado para alguien que «no sabía nada»."
+        },
+        {
+          "id": 3022,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Ashworth?",
+          "answer": "Huésped de la habitación contigua, sin documento en el registro",
+          "reaction": "CALM",
+          "note": "Habla de la víctima en pasado con una frialdad que no encaja con su relato de «cercanía»."
+        },
+        {
+          "id": 3023,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Perfil de estafadora conocido: cuatro alias, pago en efectivo y sin entrada registrada en el libro de huéspedes. ¿Qué respondes?",
+          "answer": "«Eso es una mentira calculada. Quien me acusa debería explicar por qué la escena no tiene puertas forzadas reales.» — responde demasiado rápido, sin dejar pausas para interrumpir.",
+          "reaction": "EVASIVE",
+          "note": "Cambió de tema al instante y al insistirle se pasó la lengua por los labios y desvió la mirada hacia la puerta. Fue la única pregunta que intentó cerrar sola."
+        },
+        {
+          "id": 3024,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de aquella noche en el hotel?",
+          "answer": "«No oculto nada, y este interrogatorio me está hartando.» — cruza los brazos y la voz se le seca a mitad de frase.",
+          "reaction": "NERVOUS",
+          "note": "Respiración audible, pulso visible en la mandíbula. Es la pregunta donde pierde por completo la compostura."
+        },
+        {
+          "id": 3025,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Segunda copa de champán. ¿Todavía lo niegas todo?",
+          "answer": "«No sé de qué habla. Yo no estaba allí. Y quien le dijo eso…» — se detiene, traga saliva y reconstruye la frase desde cero. Antes lo había dicho de carrerilla; ahora titubea hasta en los nombres: primero situó su alibi en Jura que durmió toda la noche y que 'no oyó na…",
+          "reaction": "CONTRADICTS",
+          "note": "CONTRADICCIÓN: recién había fijado su alibi para esa misma franja y ahora sostiene que «no estaba allí». Los dedos le tiemblan y repite la frase dos veces, cambiando los detalles entre cada repetición."
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "caseId": 3,
+      "act": 1,
+      "name": "Finn Bauer",
+      "age": 23,
+      "profession": "Botones",
+      "relation": "Personal de servicio; entregó el hielo a la habitación 21 a las 23:30",
+      "alibi": "Trailerita de entregas registrada y rondas por la planta 2 hasta la medianoche.",
+      "description": "Solemne, servicial; conocido por curiosear las pertenencias de los huéspedes.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Fue el último empleado frente a la puerta de la 21, pero las cámaras de planta lo muestran entrando y saliendo de estancias distintas cada vez.",
+      "motive": "Conocido por curiosear pertenencias; el último empleado frente a esa puerta la noche de los hechos.",
+      "interrogation": [
+        {
+          "id": 3031,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Trailerita de entregas registrada y rondas por la planta 2 hasta la medianoche.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 3032,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Ashworth?",
+          "answer": "Personal de servicio; entregó el hielo a la habitación 21 a las 23:30",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 3033,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Conocido por curiosear pertenencias; el último empleado frente a esa puerta la noche de los hechos. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 3034,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de aquella noche en el hotel?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 3035,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Segunda copa de champán. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 304,
+      "caseId": 3,
+      "act": 2,
+      "name": "Augusto Peña",
+      "age": 55,
+      "profession": "Mantenimiento",
+      "relation": "Personal de mantenimiento con llave maestra del piso",
+      "alibi": "Reparaba un grifo en la planta 3 desde las 23:15; el albarán lleva su firma.",
+      "description": "Huraño, de pocas palabras. Lleva cinco años pidiendo la jubilación anticipada.",
+      "suspicionLevel": "LOW",
+      "notes": "Su llave maestra abre todo el edificio, pero el dispositivo del piso muestra la apertura con tarjeta de huésped, no con maestra.",
+      "motive": "Cansado de reglas y con la jubilación en la recámara: sin rastro de participación económica.",
+      "interrogation": [
+        {
+          "id": 3041,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Reparaba un grifo en la planta 3 desde las 23:15; el albarán lleva su firma.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 3042,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Ashworth?",
+          "answer": "Personal de mantenimiento con llave maestra del piso",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 3043,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Cansado de reglas y con la jubilación en la recámara: sin rastro de participación económica. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 3044,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de aquella noche en el hotel?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 3045,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Segunda copa de champán. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 305,
+      "caseId": 3,
+      "act": 1,
+      "name": "Martina Solís",
+      "age": 41,
+      "profession": "Recepcionista de tarde",
+      "relation": "Atendió el check-in de los huéspedes del piso 2",
+      "alibi": "Salió a las 22:40; la cámara la muestra cruzando el vestíbulo y saliendo.",
+      "description": "Atenta, habladora; recuerda con precisión la llegada de Ashworth y las 'extrañas' preguntas de Calloway.",
+      "suspicionLevel": "LOW",
+      "notes": "Recordó que Calloway preguntó dos veces por si 'la 21 estaba ocupada'. Detalle clave, no culpabilidad.",
+      "motive": "Testigo involuntaria: su memoria de la conversación de Calloway la exculpa y a la vez la incrimina.",
+      "interrogation": [
+        {
+          "id": 3051,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Salió a las 22:40; la cámara la muestra cruzando el vestíbulo y saliendo.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 3052,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Ashworth?",
+          "answer": "Atendió el check-in de los huéspedes del piso 2",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 3053,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Testigo involuntaria: su memoria de la conversación de Calloway la exculpa y a la vez la incrimina. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 3054,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de aquella noche en el hotel?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 3055,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Segunda copa de champán. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 306,
+      "caseId": 3,
+      "act": 1,
+      "name": "Diego Vela",
+      "age": 39,
+      "profession": "Taxista",
+      "relation": "Conductor que llevó a Calloway al hotel la tarde anterior",
+      "alibi": "Lleva a Calloway a la puerta a las 17:50 y no vuelve a verla en toda la noche.",
+      "description": "Pendiente de una multa impaga; recuerda el trayecto porque 'pagó con billetes grandes'.",
+      "suspicionLevel": "LOW",
+      "notes": "Su declaración confirma la ruta de Calloway hacia el hotel, nada más. Sin vínculo con la habitación.",
+      "motive": "Multas impagas y una limpieza de deudas recurrente: sin conexión posterior con la escena.",
+      "interrogation": [
+        {
+          "id": 3061,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Lleva a Calloway a la puerta a las 17:50 y no vuelve a verla en toda la noche.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 3062,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía al señor Ashworth?",
+          "answer": "Conductor que llevó a Calloway al hotel la tarde anterior",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 3063,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Multas impagas y una limpieza de deudas recurrente: sin conexión posterior con la escena. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 3064,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de aquella noche en el hotel?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 3065,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Segunda copa de champán. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 401,
+      "caseId": 4,
+      "act": 2,
+      "name": "Grecia Manso",
+      "age": 33,
+      "profession": "Soprano suplente",
+      "relation": "Suplente oficial de Aurora; heredaría el papel estelar",
+      "alibi": "Iba vestida para el mismo papel y permaneció en su camerino con la jefa de escena de las 20:15 a las 22:30.",
+      "description": "Estudiosa, ambiciosa. Sabe botánica: mudó un jardín entero por hobby hace dos temporadas.",
+      "suspicionLevel": "HIGH",
+      "notes": "Preguntó dos veces al maquillador por la pastilla de Aurora y por su 'enfermedad del corazón' en los últimos meses.",
+      "motive": "Dos años esperando un hueco en el reparto y conocimiento exacto de las flores y de la afección cardiaca de la diva.",
+      "interrogation": [
+        {
+          "id": 4011,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el envenenamiento?",
+          "answer": "Iba vestida para el mismo papel y permaneció en su camerino con la jefa de escena de las 20:15 a las 22:30.",
+          "reaction": "TENSE",
+          "note": "Recitó el guion de su alibi en orden perfecto, con los dedos tamborileando sobre la mesa. Demasiado ensayado para alguien que «no sabía nada»."
+        },
+        {
+          "id": 4012,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Aurora?",
+          "answer": "Suplente oficial de Aurora; heredaría el papel estelar",
+          "reaction": "CALM",
+          "note": "Habla de la víctima en pasado con una frialdad que no encaja con su relato de «cercanía»."
+        },
+        {
+          "id": 4013,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Dos años esperando un hueco en el reparto y conocimiento exacto de las flores y de la afección cardiaca de la diva. ¿Qué respondes?",
+          "answer": "«Eso es una mentira calculada. Quien me acusa debería explicar por qué la escena no tiene puertas forzadas reales.» — responde demasiado rápido, sin dejar pausas para interrumpir.",
+          "reaction": "EVASIVE",
+          "note": "Cambió de tema al instante y al insistirle se pasó la lengua por los labios y desvió la mirada hacia la puerta. Fue la única pregunta que intentó cerrar sola."
+        },
+        {
+          "id": 4014,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el entreacto de la gala?",
+          "answer": "«No oculto nada, y este interrogatorio me está hartando.» — cruza los brazos y la voz se le seca a mitad de frase.",
+          "reaction": "NERVOUS",
+          "note": "Respiración audible, pulso visible en la mandíbula. Es la pregunta donde pierde por completo la compostura."
+        },
+        {
+          "id": 4015,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Mensaje de advertencia anónimo. ¿Todavía lo niegas todo?",
+          "answer": "«No sé de qué habla. Yo no estaba allí. Y quien le dijo eso…» — se detiene, traga saliva y reconstruye la frase desde cero. Antes lo había dicho de carrerilla; ahora titubea hasta en los nombres: primero situó su alibi en Iba vestida para el mismo papel y permaneció e…",
+          "reaction": "CONTRADICTS",
+          "note": "CONTRADICCIÓN: recién había fijado su alibi para esa misma franja y ahora sostiene que «no estaba allí». Los dedos le tiemblan y repite la frase dos veces, cambiando los detalles entre cada repetición."
+        }
+      ]
+    },
+    {
+      "id": 402,
+      "caseId": 4,
+      "act": 1,
+      "name": "Damián Calvo",
+      "age": 58,
+      "profession": "Director del teatro",
+      "relation": "Responsable de programación y presupuestos",
+      "alibi": "En la sala de control durante el entreacto, firmado por el técnico de sonido.",
+      "description": "Mano de hierro en crisis: el teatro pierde abonos desde hace dos temporadas.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "La póliza del teatro se renovó con una cláusula que cubre la cancelación de gala por fallecimiento de la solista principal.",
+      "motive": "Salvar el teatro con el seguro de cancelación y renovar el abono con un nombre más barato en cartel.",
+      "interrogation": [
+        {
+          "id": 4021,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el envenenamiento?",
+          "answer": "En la sala de control durante el entreacto, firmado por el técnico de sonido.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 4022,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Aurora?",
+          "answer": "Responsable de programación y presupuestos",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 4023,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Salvar el teatro con el seguro de cancelación y renovar el abono con un nombre más barato en cartel. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 4024,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el entreacto de la gala?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 4025,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Mensaje de advertencia anónimo. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 403,
+      "caseId": 4,
+      "act": 1,
+      "name": "Fiorella Reyes",
+      "age": 37,
+      "profession": "Peluquera y vestuarista",
+      "relation": "Acompañaba a Aurora en cada función; conocía sus horarios",
+      "alibi": "Cerrando el vestuario de Aurora 'diez minutos más' de lo habitual esa noche.",
+      "description": "Protectora constante de Aurora; el personal la considera la sombra de la diva.",
+      "suspicionLevel": "LOW",
+      "notes": "La cinta muestra que salió del camerino sin el ramo institucional… y los lirios del valle que arma el ramo no son del ramo oficial.",
+      "motive": "Rencor callado por el trato de manera constante de Aurora y acceso sin espera a su camerino.",
+      "interrogation": [
+        {
+          "id": 4031,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el envenenamiento?",
+          "answer": "Cerrando el vestuario de Aurora 'diez minutos más' de lo habitual esa noche.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 4032,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Aurora?",
+          "answer": "Acompañaba a Aurora en cada función; conocía sus horarios",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 4033,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Rencor callado por el trato de manera constante de Aurora y acceso sin espera a su camerino. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 4034,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el entreacto de la gala?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 4035,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Mensaje de advertencia anónimo. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 404,
+      "caseId": 4,
+      "act": 1,
+      "name": "Andrés Pujol",
+      "age": 62,
+      "profession": "Crítico musical",
+      "relation": "Crítico que puso en duda la voz de Aurora en su última reseña",
+      "alibi": "En la butaca 14 del patio, visible en cámara durante todo el acto I y el entreacto.",
+      "description": "Elocuente y con peticiones contundentes: 'Aurora ya no rinde', escribió hace un mes.",
+      "suspicionLevel": "LOW",
+      "notes": "Su reseña negativa convenció al teatro de buscar suplente; sin embargo, no se le vio fuera de su butaca un solo instante.",
+      "motive": "Credibilidad en juego tras su reseña demoledora; no tomó contacto con el camerino.",
+      "interrogation": [
+        {
+          "id": 4041,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el envenenamiento?",
+          "answer": "En la butaca 14 del patio, visible en cámara durante todo el acto I y el entreacto.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 4042,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Aurora?",
+          "answer": "Crítico que puso en duda la voz de Aurora en su última reseña",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 4043,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Credibilidad en juego tras su reseña demoledora; no tomó contacto con el camerino. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 4044,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el entreacto de la gala?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 4045,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Mensaje de advertencia anónimo. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 405,
+      "caseId": 4,
+      "act": 2,
+      "name": "Nadia Campo",
+      "age": 45,
+      "profession": "Asistente personal de Aurora",
+      "relation": "Gestora de la agenda, el vino y el equipaje de la diva",
+      "alibi": "Fue quien sirvió la copa 'para la garganta' antes de salir a escena.",
+      "description": "Cumplidora en exceso; hace tres años casi se despide por un desaire de Aurora.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "La copa tenía el vino sustituto sin etiqueta. Su historial médico no muestra veneno alguno, pero la cadena del vino pasa por sus manos.",
+      "motive": "Rencor por desaires pasados y control absoluto de la copa y del vino de Aurora.",
+      "interrogation": [
+        {
+          "id": 4051,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el envenenamiento?",
+          "answer": "Fue quien sirvió la copa 'para la garganta' antes de salir a escena.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 4052,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Aurora?",
+          "answer": "Gestora de la agenda, el vino y el equipaje de la diva",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 4053,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Rencor por desaires pasados y control absoluto de la copa y del vino de Aurora. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 4054,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el entreacto de la gala?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 4055,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Mensaje de advertencia anónimo. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 406,
+      "caseId": 4,
+      "act": 1,
+      "name": "Bruno Vidal",
+      "age": 50,
+      "profession": "Exmarido, empresario",
+      "relation": "Exmarido separado; la pensión pasa por el buen juicio del juez",
+      "alibi": "Compró su butaca a las 20:05 y salió del teatro a las 20:40 para 'una llamada'.",
+      "description": "Tenso, con abogado presente; niega haber entrado al camerino.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Su salida a las 20:40 deja un hueco de 20 minutos al que no hay testigo… pero la cámara del pasillo de camerinos no lo muestra dentro.",
+      "motive": "Pensión y bienes en juego en el divorcio; interés financiero claro en el fallecimiento.",
+      "interrogation": [
+        {
+          "id": 4061,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el envenenamiento?",
+          "answer": "Compró su butaca a las 20:05 y salió del teatro a las 20:40 para 'una llamada'.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 4062,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Aurora?",
+          "answer": "Exmarido separado; la pensión pasa por el buen juicio del juez",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 4063,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Pensión y bienes en juego en el divorcio; interés financiero claro en el fallecimiento. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 4064,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el entreacto de la gala?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 4065,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Mensaje de advertencia anónimo. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 501,
+      "caseId": 5,
+      "act": 1,
+      "name": "Marta Aldana",
+      "age": 30,
+      "profession": "Gestora, sócia de la hija",
+      "relation": "Hija soltera del fallecido; viajaba en el tren con él",
+      "alibi": "En su compartimento vecino, puerta cerrada; la azafata la vio dormir hasta las 2:00.",
+      "description": "Serena en el interrogatorio, algo fría. Hereda la sociedad del padre.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Discutió con su padre por el expediente que llevaba consigo. La entrevista no deja claro el contenido del maletín.",
+      "motive": "Hereda el bufete y temía que el expediente hundiera el patrimonio familiar.",
+      "interrogation": [
+        {
+          "id": 5011,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "En su compartimento vecino, puerta cerrada; la azafata la vio dormir hasta las 2:00.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 5012,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Cosme Aldana?",
+          "answer": "Hija soltera del fallecido; viajaba en el tren con él",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 5013,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Hereda el bufete y temía que el expediente hundiera el patrimonio familiar. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 5014,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el trayecto nocturno?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 5015,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Carta de ultimátum sin enviar. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 502,
+      "caseId": 5,
+      "act": 1,
+      "name": "Sara Núñez",
+      "age": 28,
+      "profession": "Azafata del coche B",
+      "relation": "Personal del tren; única con llaves de los compartimentos",
+      "alibi": "Ronda documentada por el pasillo cada 20 minutos; la cámara la confirma cada vez.",
+      "description": "Eficiente, cansada; lleva dos años en el turno nocturno y perdió su empleo anterior por un robo inexistente.",
+      "suspicionLevel": "LOW",
+      "notes": "Tiene llave maestra del vagón, pero no hay filmación de ella acercándose a la puerta 4 fuera de su horario.",
+      "motive": "Ingresos justos y un despido injusto en su historial: sin motivos visibles contra Aldana.",
+      "interrogation": [
+        {
+          "id": 5021,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Ronda documentada por el pasillo cada 20 minutos; la cámara la confirma cada vez.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 5022,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Cosme Aldana?",
+          "answer": "Personal del tren; única con llaves de los compartimentos",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 5023,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Ingresos justos y un despido injusto en su historial: sin motivos visibles contra Aldana. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 5024,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el trayecto nocturno?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 5025,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Carta de ultimátum sin enviar. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 503,
+      "caseId": 5,
+      "act": 2,
+      "name": "León Quiroga",
+      "age": 54,
+      "profession": "Socio del bufete",
+      "relation": "Socio de toda la vida; viajaba 'de casualidad' en el mismo tren",
+      "alibi": "Dice que no se enteró hasta la mañana, que viajó en el compartimento 2 porque el suyo 'se lo dieron a un amigo'.",
+      "description": "Afable y escurridizo. Su palabra cambia ligeramente entre las dos entrevistas.",
+      "suspicionLevel": "HIGH",
+      "notes": "La auditoría lo señala como beneficiario de los desvíos que Aldana llevaba denunciando. Y su billete pagado en efectivo no tiene número de asiento.",
+      "motive": "Desviaba fondos del bufete y Aldana llevaba la auditoría al fiscal.",
+      "interrogation": [
+        {
+          "id": 5031,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Dice que no se enteró hasta la mañana, que viajó en el compartimento 2 porque el suyo 'se lo dieron a un amigo'.",
+          "reaction": "TENSE",
+          "note": "Recitó el guion de su alibi en orden perfecto, con los dedos tamborileando sobre la mesa. Demasiado ensayado para alguien que «no sabía nada»."
+        },
+        {
+          "id": 5032,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Cosme Aldana?",
+          "answer": "Socio de toda la vida; viajaba 'de casualidad' en el mismo tren",
+          "reaction": "CALM",
+          "note": "Habla de la víctima en pasado con una frialdad que no encaja con su relato de «cercanía»."
+        },
+        {
+          "id": 5033,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Desviaba fondos del bufete y Aldana llevaba la auditoría al fiscal. ¿Qué respondes?",
+          "answer": "«Eso es una mentira calculada. Quien me acusa debería explicar por qué la escena no tiene puertas forzadas reales.» — responde demasiado rápido, sin dejar pausas para interrumpir.",
+          "reaction": "EVASIVE",
+          "note": "Cambió de tema al instante y al insistirle se pasó la lengua por los labios y desvió la mirada hacia la puerta. Fue la única pregunta que intentó cerrar sola."
+        },
+        {
+          "id": 5034,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el trayecto nocturno?",
+          "answer": "«No oculto nada, y este interrogatorio me está hartando.» — cruza los brazos y la voz se le seca a mitad de frase.",
+          "reaction": "NERVOUS",
+          "note": "Respiración audible, pulso visible en la mandíbula. Es la pregunta donde pierde por completo la compostura."
+        },
+        {
+          "id": 5035,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Carta de ultimátum sin enviar. ¿Todavía lo niegas todo?",
+          "answer": "«No sé de qué habla. Yo no estaba allí. Y quien le dijo eso…» — se detiene, traga saliva y reconstruye la frase desde cero. Antes lo había dicho de carrerilla; ahora titubea hasta en los nombres: primero situó su alibi en Dice que no se enteró hasta la mañana, que via…",
+          "reaction": "CONTRADICTS",
+          "note": "CONTRADICCIÓN: recién había fijado su alibi para esa misma franja y ahora sostiene que «no estaba allí». Los dedos le tiemblan y repite la frase dos veces, cambiando los detalles entre cada repetición."
+        }
+      ]
+    },
+    {
+      "id": 504,
+      "caseId": 5,
+      "act": 1,
+      "name": "Tadeo Blum",
+      "age": 47,
+      "profession": "Detective privado",
+      "relation": "Contratado por la esposa de Aldana para seguirle el rastro",
+      "alibi": "Viaja en el compartimento 6 del mismo coche y dice que 'observaba' por contrato.",
+      "description": "Lacónico, método. Sus notas registran a cada pasajero del coche B cada hora.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "El pestillo del compartimento 4 estaba cerrado desde dentro; si vio algo, su cuaderno es la única copia.",
+      "motive": "Cobra por observar, no por intervenir: guarda silencio u oculta el dato que no le convenga.",
+      "interrogation": [
+        {
+          "id": 5041,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Viaja en el compartimento 6 del mismo coche y dice que 'observaba' por contrato.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 5042,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Cosme Aldana?",
+          "answer": "Contratado por la esposa de Aldana para seguirle el rastro",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 5043,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Cobra por observar, no por intervenir: guarda silencio u oculta el dato que no le convenga. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 5044,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el trayecto nocturno?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 5045,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Carta de ultimátum sin enviar. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 505,
+      "caseId": 5,
+      "act": 2,
+      "name": "Inés Vergara",
+      "age": 38,
+      "profession": "Pasajera del compartimento vecino",
+      "relation": "Ocupante del compartimento 3, contiguo a la víctima",
+      "alibi": "Oye 'una discusión y ruido de cristal' a la 1:30, pero no sale a comprobar.",
+      "description": "Ansiosa, palidece al hablar del tren. Esconde un frasco de ansiolíticos bajo el cinturón.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Su versión de las horas coincide con el hueco exacto de la cámara ciega: demasiado bien si verdaderamente no miró.",
+      "motive": "Se ha saltado su medicación y teme por su propia vida: no un móvil criminal, sino un pánico real.",
+      "interrogation": [
+        {
+          "id": 5051,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Oye 'una discusión y ruido de cristal' a la 1:30, pero no sale a comprobar.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 5052,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Cosme Aldana?",
+          "answer": "Ocupante del compartimento 3, contiguo a la víctima",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 5053,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Se ha saltado su medicación y teme por su propia vida: no un móvil criminal, sino un pánico real. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 5054,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el trayecto nocturno?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 5055,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Carta de ultimátum sin enviar. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 506,
+      "caseId": 5,
+      "act": 1,
+      "name": "Rubén Salas",
+      "age": 61,
+      "profession": "Revisor del Alfa-9",
+      "relation": "Comprobó los billetes en la parada anterior al suceso",
+      "alibi": "Su puesto de revisión está en el coche C; la cámara del pasillo B no registra su presencia tras las 21:50.",
+      "description": "Puntual, metódico; sus anotaciones de billetes son impecables durante todo el trayecto.",
+      "suspicionLevel": "LOW",
+      "notes": "Registró un pasajero sin billete a bordo del coche B en la parada de salida que nunca apareció en la lista de ocupantes.",
+      "motive": "Cumplidor; el dato del 'pasajero fantasma' apunta hacia otra dirección: nadie en el tren lo inculpa.",
+      "interrogation": [
+        {
+          "id": 5061,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió la muerte?",
+          "answer": "Su puesto de revisión está en el coche C; la cámara del pasillo B no registra su presencia tras las 21:50.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 5062,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía a Cosme Aldana?",
+          "answer": "Comprobó los billetes en la parada anterior al suceso",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 5063,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Cumplidor; el dato del 'pasajero fantasma' apunta hacia otra dirección: nadie en el tren lo inculpa. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 5064,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de el trayecto nocturno?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 5065,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Carta de ultimátum sin enviar. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 601,
+      "caseId": 6,
+      "act": 1,
+      "name": "Dra. Lidia Anchara",
+      "age": 60,
+      "profession": "Directora de la biblioteca",
+      "relation": "Máxima responsable del archivo histórico",
+      "alibi": "Estaba en una conferencia en otra ciudad; su hotel confirma el registro de una sola noche.",
+      "description": "Funcionaria impecable en la forma, esquiva en el fondo: el incendio llega 'en el peor momento' para su expediente.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Su póliza del edificio subió tras el cierre del depósito central del año pasado. El trámite es correcto, pero el seguro se renovó a una cifra mucho mayor.",
+      "motive": "Su expediente de jubilación depende del mantenimiento del archivo; interés en no abrir la auditoría.",
+      "interrogation": [
+        {
+          "id": 6011,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el incendio?",
+          "answer": "Estaba en una conferencia en otra ciudad; su hotel confirma el registro de una sola noche.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 6012,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el archivo?",
+          "answer": "Máxima responsable del archivo histórico",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 6013,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Su expediente de jubilación depende del mantenimiento del archivo; interés en no abrir la auditoría. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 6014,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la madrugada del incendio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 6015,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Transferencia inmobiliaria. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 602,
+      "caseId": 6,
+      "act": 2,
+      "name": "Pablo Tierno",
+      "age": 34,
+      "profession": "Adjunto del archivo",
+      "relation": "Gestor del depósito de legajos y de la llave maestra",
+      "alibi": "Dice que cerró el depósito a las 21:30 y 'fue a casa'. Su coche no está en la cámara de la biblioteca esa noche.",
+      "description": "Eficiente, reciente aumento de gastos: se compró un reloj de marca el mes pasado según sus compañeros.",
+      "suspicionLevel": "HIGH",
+      "notes": "La transferencia de 50.000 € de una sociedad inmobiliaria coincide con la fecha del incendio. Y recordó 'de repente' haber olvidado su abrigo en el depósito.",
+      "motive": "La inmobiliaria de Nicolás Ferrán le ofreció liquidar sus deudas si 'desaparecían' ciertas escrituras.",
+      "interrogation": [
+        {
+          "id": 6021,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el incendio?",
+          "answer": "Dice que cerró el depósito a las 21:30 y 'fue a casa'. Su coche no está en la cámara de la biblioteca esa noche.",
+          "reaction": "TENSE",
+          "note": "Recitó el guion de su alibi en orden perfecto, con los dedos tamborileando sobre la mesa. Demasiado ensayado para alguien que «no sabía nada»."
+        },
+        {
+          "id": 6022,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el archivo?",
+          "answer": "Gestor del depósito de legajos y de la llave maestra",
+          "reaction": "CALM",
+          "note": "Habla de la víctima en pasado con una frialdad que no encaja con su relato de «cercanía»."
+        },
+        {
+          "id": 6023,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que La inmobiliaria de Nicolás Ferrán le ofreció liquidar sus deudas si 'desaparecían' ciertas escrituras. ¿Qué respondes?",
+          "answer": "«Eso es una mentira calculada. Quien me acusa debería explicar por qué la escena no tiene puertas forzadas reales.» — responde demasiado rápido, sin dejar pausas para interrumpir.",
+          "reaction": "EVASIVE",
+          "note": "Cambió de tema al instante y al insistirle se pasó la lengua por los labios y desvió la mirada hacia la puerta. Fue la única pregunta que intentó cerrar sola."
+        },
+        {
+          "id": 6024,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la madrugada del incendio?",
+          "answer": "«No oculto nada, y este interrogatorio me está hartando.» — cruza los brazos y la voz se le seca a mitad de frase.",
+          "reaction": "NERVOUS",
+          "note": "Respiración audible, pulso visible en la mandíbula. Es la pregunta donde pierde por completo la compostura."
+        },
+        {
+          "id": 6025,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Transferencia inmobiliaria. ¿Todavía lo niegas todo?",
+          "answer": "«No sé de qué habla. Yo no estaba allí. Y quien le dijo eso…» — se detiene, traga saliva y reconstruye la frase desde cero. Antes lo había dicho de carrerilla; ahora titubea hasta en los nombres: primero situó su alibi en Dice que cerró el depósito a las 21:30 y 'fue …",
+          "reaction": "CONTRADICTS",
+          "note": "CONTRADICCIÓN: recién había fijado su alibi para esa misma franja y ahora sostiene que «no estaba allí». Los dedos le tiemblan y repite la frase dos veces, cambiando los detalles entre cada repetición."
+        }
+      ]
+    },
+    {
+      "id": 603,
+      "caseId": 6,
+      "act": 1,
+      "name": "Vera Cobo",
+      "age": 43,
+      "profession": "Conserje",
+      "relation": "Controla el acceso del turno de noche y las llaves auxiliares",
+      "alibi": "Su puesto de conserjería la registra entrando y saliendo cada hora del baño.",
+      "description": "Cansada, sonámbula diagnosticada hace años; las cámaras la muestran errando por el pasillo dormida.",
+      "suspicionLevel": "LOW",
+      "notes": "Un bidón vacío de acelerante aparece cerca de su taquilla, pero la marca del bidón es de una flota profesional externa: ella no tiene vehículo propio.",
+      "motive": "La investigación forense descartó su implicación: dormía los focos, no los encendió.",
+      "interrogation": [
+        {
+          "id": 6031,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el incendio?",
+          "answer": "Su puesto de conserjería la registra entrando y saliendo cada hora del baño.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 6032,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el archivo?",
+          "answer": "Controla el acceso del turno de noche y las llaves auxiliares",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 6033,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que La investigación forense descartó su implicación: dormía los focos, no los encendió. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 6034,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la madrugada del incendio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 6035,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Transferencia inmobiliaria. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 604,
+      "caseId": 6,
+      "act": 2,
+      "name": "Nicolás Ferrán",
+      "age": 48,
+      "profession": "Empresario inmobiliario",
+      "relation": "Beneficiario de las escrituras 'extraviadas' de tres fincas municipales",
+      "alibi": "Estuvo en la inauguración de una sucursal a 40 km; los recibos del evento lo registran hasta las 23:00.",
+      "description": "Poderoso, abogado siempre presente. Nadie de su equipo tenía acceso a la biblioteca… según sus afirmaciones.",
+      "suspicionLevel": "HIGH",
+      "notes": "La sociedad inmobiliaria que transfirió los 50.000 € es de su propiedad. Y su camioneta flota firma justo el contrato de 'limpieza técnica' del edificio.",
+      "motive": "Las escrituras amenazaban con devolver tres fincas valiosas al municipio: su imperio depende de que ardan.",
+      "interrogation": [
+        {
+          "id": 6041,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el incendio?",
+          "answer": "Estuvo en la inauguración de una sucursal a 40 km; los recibos del evento lo registran hasta las 23:00.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 6042,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el archivo?",
+          "answer": "Beneficiario de las escrituras 'extraviadas' de tres fincas municipales",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 6043,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Las escrituras amenazaban con devolver tres fincas valiosas al municipio: su imperio depende de que ardan. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 6044,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la madrugada del incendio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 6045,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Transferencia inmobiliaria. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    },
+    {
+      "id": 605,
+      "caseId": 6,
+      "act": 1,
+      "name": "Sira Bell",
+      "age": 27,
+      "profession": "Restauradora becaria",
+      "relation": "Digitalizaba legajos en el depósito la semana del incendio",
+      "alibi": "Trabajó en la planta de lectura hasta las 20:00; su ficha de entrada está sellada a esa hora.",
+      "description": "Seria, precisa; lleva su propio control de temperatura y humedad de los legajos.",
+      "suspicionLevel": "LOW",
+      "notes": "Sus copias digitales de las escrituras son la única salvación del expediente: su labor no puede estar en duda.",
+      "motive": "Candidata a culpable por acceso… pero salvó una copia de cada escritura antes del fuego.",
+      "interrogation": [
+        {
+          "id": 6051,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el incendio?",
+          "answer": "Trabajó en la planta de lectura hasta las 20:00; su ficha de entrada está sellada a esa hora.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 6052,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el archivo?",
+          "answer": "Digitalizaba legajos en el depósito la semana del incendio",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 6053,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Candidata a culpable por acceso… pero salvó una copia de cada escritura antes del fuego. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "TENSE",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 6054,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la madrugada del incendio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 6055,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Transferencia inmobiliaria. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "CALM",
+          "note": "Escuchó la confrontación casi sin pestañear y mantuvo su versión íntegra. No presentó marcas de engaño."
+        }
+      ]
+    },
+    {
+      "id": 606,
+      "caseId": 6,
+      "act": 1,
+      "name": "Mateo Cruz",
+      "age": 35,
+      "profession": "Vigilante nocturno",
+      "relation": "Responsable de ronda del turno de noche",
+      "alibi": "Su cuadrante registra rondas… pero la cámara del garaje no lo muestra completando la del depósito.",
+      "description": "Con sueño acumulado, revienta al describir su ruta exacta: la describe a la perfección, demasiado bien.",
+      "suspicionLevel": "MEDIUM",
+      "notes": "Su cuadrante está marcado 'completado' a las 2:40, pero el garaje lo registra dormido en el puesto desde las 2:10.",
+      "motive": "Descuidó su ronda por agotamiento; su negligencia permitió el fuego, no lo provocó.",
+      "interrogation": [
+        {
+          "id": 6061,
+          "type": "ALIBI",
+          "act": 1,
+          "question": "¿Dónde estabas cuando ocurrió el incendio?",
+          "answer": "Su cuadrante registra rondas… pero la cámara del garaje no lo muestra completando la del depósito.",
+          "reaction": "CALM",
+          "note": "Respondió sin titubear; su versión coincide con los registros disponibles."
+        },
+        {
+          "id": 6062,
+          "type": "RELACION",
+          "act": 1,
+          "question": "¿Qué relación te unía con el archivo?",
+          "answer": "Responsable de ronda del turno de noche",
+          "reaction": "CALM",
+          "note": "Tono neutro y coherente con su rol; esta es la parte que relata con más soltura."
+        },
+        {
+          "id": 6063,
+          "type": "MOTIVO",
+          "act": 1,
+          "question": "Hay quien dice que Descuidó su ronda por agotamiento; su negligencia permitió el fuego, no lo provocó. ¿Qué respondes?",
+          "answer": "«Eso es mi vida privada, no ${ctx.crime}. Hablemos de los hechos, no de rumores.» — se queja del rumbo, pero se mantiene firme en los datos.",
+          "reaction": "NERVOUS",
+          "note": "Se turbó al mencionar su asunto personal, pero su defensa gira siempre sobre los hechos y no contradice ninguna franja horaria."
+        },
+        {
+          "id": 6064,
+          "type": "GENERAL",
+          "act": 1,
+          "question": "¿Hay algo que ocultes acerca de la madrugada del incendio?",
+          "answer": "«Tengo mi vida privada, como cualquiera. Pero de la noche en cuestión ya lo he dicho todo.»",
+          "reaction": "TENSE",
+          "note": "Se incomoda con el ruido personal, pero nunca esquiva un dato concreto; su narración no se desmorona."
+        },
+        {
+          "id": 6065,
+          "type": "PRUEBA",
+          "act": 3,
+          "question": "Mi equipo encontró Transferencia inmobiliaria. ¿Todavía lo niegas todo?",
+          "answer": "«Revisa todo lo que quieras: tengo los recibos, los testigos y la hora exacta. No tengo nada que esconder sobre eso.»",
+          "reaction": "TENSE",
+          "note": "Se alteró al verse confrontado, maldijo la pregunta… y aun así mantuvo los mismos datos de su alibi palabra por palabra. La versión no se rompió."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": 201,
+      "caseId": 1,
+      "type": "document",
+      "act": 1,
+      "title": "Programa de la inauguración",
+      "location": "Vestíbulo del ala este",
+      "summary": "El programa impreso de la muestra privada. Nada inusual a simple vista.",
+      "analysisNote": "Rutinario. Sin valor para la investigación.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 202,
+      "caseId": 1,
+      "type": "document",
+      "act": 1,
+      "title": "Recibo del taxi de Elena",
+      "location": "Registro del portero",
+      "summary": "Un recibo con hora 22:12, taxi #4418, que coincide con el recuerdo del portero.",
+      "analysisNote": "Cronología confirmada: Elena Frías estaba al menos a 4 km en la hora estimada de la muerte.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 203,
+      "caseId": 1,
+      "type": "document",
+      "act": 1,
+      "title": "Parte de ronda de Teo",
+      "location": "Oficina de seguridad",
+      "summary": "Ronda marcada: 22:40, 22:55, 23:10. Todos los puntos electrónicos en hora.",
+      "analysisNote": "Coincide con las cámaras. Teo estaba en su ruta, no en el ala este.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 204,
+      "caseId": 1,
+      "type": "document",
+      "act": 2,
+      "title": "Factura falsa nº 117",
+      "location": "Bandeja de contabilidad",
+      "summary": "Una factura por 'restauración histórica' sin proveedor real. El análisis de firmas apunta a un tercero externo.",
+      "analysisNote": "Pistola falsa: la redactó alguien externo al personal. No conduce a la escena.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 205,
+      "caseId": 1,
+      "type": "testimony",
+      "act": 1,
+      "title": "Amenaza pública de Elena",
+      "location": "Declaraciones de testigos",
+      "summary": "Tres testigos recuerdan el grito de Elena, 'Te cierro el local, Marlowe', tres noches antes.",
+      "analysisNote": "Ruido de móvil fuerte, pero la amenaza fue ante todo el mundo y jamás la ejecutó.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 206,
+      "caseId": 1,
+      "type": "digital",
+      "act": 3,
+      "title": "Grabación de la entrada trasera",
+      "location": "Archivo de seguridad, cámara SE-4",
+      "summary": "23:48: una figura con el abrigo de Marco Vélez entra por la puerta trasera y cruza directo hacia el pasillo de servicio.",
+      "analysisNote": "Contradice su coartada. Aseguraba estar en el muelle de carga, que está en el extremo opuesto del edificio.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 207,
+      "caseId": 1,
+      "type": "digital",
+      "act": 2,
+      "title": "Mensaje final de Marlowe",
+      "location": "Extracción forense del teléfono",
+      "summary": "23:00: 'Los números no cuadran, Marco. Encontré los cuadros desaparecidos. Mi despacho. Ahora.'",
+      "analysisNote": "Enviado minutos antes de la muerte, dirigido a Marco Vélez. Establece el móvil y la confrontación.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 208,
+      "caseId": 1,
+      "type": "trace",
+      "act": 1,
+      "title": "Ventana entreabierta del pasillo",
+      "location": "Pasillo de servicio",
+      "summary": "Una ventana de mantenimiento abierta hacia el callejón. El polvo del alféizar está intacto.",
+      "analysisNote": "Montada. Nadie entró ni salió por ella: sin huellas, sin polvo removido.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 209,
+      "caseId": 1,
+      "type": "trace",
+      "act": 3,
+      "title": "Fragmentos del jarrón roto",
+      "location": "Informe del laboratorio criminal",
+      "summary": "El jarrón chino roto, 'prueba del forcejeo', se quebró desde dentro: hay esquirlas bajo la estantería, no junto a la puerta.",
+      "analysisNote": "El allanamiento lo montó alguien que ya estaba dentro. La cerradura forzada y la ventana eran teatro.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 301,
+      "caseId": 2,
+      "type": "document",
+      "act": 1,
+      "title": "Manual de la bóveda cifrada",
+      "location": "Biblioteca de I+D",
+      "summary": "Manual de servicio que documenta la ventana de reinicio, cuando la validación de cifrado queda anulada 90 segundos.",
+      "analysisNote": "Solo dos personas del edificio conocían de memoria la ventana de reinicio. Ambas ya fueron entrevistadas.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 302,
+      "caseId": 2,
+      "type": "document",
+      "act": 1,
+      "title": "Cuaderno de contraseñas del becario",
+      "location": "Puesto de Mateo Paz",
+      "summary": "Una lista sin cifrar de contraseñas de servidor, incluida la de la consola de la bóveda.",
+      "analysisNote": "Descuidado, pero la planta de la bóveda jamás aceptó una credencial que no fuera de los tres altos cargos o del administrador.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 303,
+      "caseId": 2,
+      "type": "testimony",
+      "act": 2,
+      "title": "Oferta de la empresa rival",
+      "location": "Expediente de RR.HH.",
+      "summary": "Una empresa rival ofreció a la Dra. Senna un puesto fundador hace seis meses. Lo rechazó por escrito.",
+      "analysisNote": "Móvil tentador, pero los torniquetes biométricos prueban que salió a las 21:40 y nunca volvió a entrar.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 304,
+      "caseId": 2,
+      "type": "physical",
+      "act": 2,
+      "title": "Maletín de equipo vacío",
+      "location": "Hueco de servicio, nivel 2",
+      "summary": "Maletín acolchado del tamaño exacto de la caja del APEX-9, limpio de huellas.",
+      "analysisNote": "La termografía del cierre coincide con una figura que se dirige al hueco de servicio, no al vestíbulo.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 305,
+      "caseId": 2,
+      "type": "digital",
+      "act": 2,
+      "title": "Sesión VPN doméstica",
+      "location": "Registro del router de Royce",
+      "summary": "Sesión VPN desde la IP de casa de Elías Royce de 22:44 a 0:02. La sesión estuvo inactiva todo el tiempo: sin tráfico.",
+      "analysisNote": "Eine 'coartada' ociosa: cualquiera puede abrir una VPN y abandonarla. No prueba nada por sí sola.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 306,
+      "caseId": 2,
+      "type": "digital",
+      "act": 3,
+      "title": "Anomalía 'pass-back' de credencial",
+      "location": "Sistema de control de accesos",
+      "summary": "La credencial de Royce entra a la planta de la bóveda a las 23:12 y, de forma imposible, vuelve a marcar tres minutos después como 'entrada fantasma'.",
+      "analysisNote": "Pass-back clásico: una credencial fue clonada. El intruso entró mientras el clon 'salía' por relé.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 307,
+      "caseId": 2,
+      "type": "digital",
+      "act": 3,
+      "title": "Consola con clave de administrador",
+      "location": "Registros de la consola de la bóveda",
+      "summary": "23:15: una sesión de consola de administrador con la clave que solo se emite al puesto de ingeniería de seguridad.",
+      "analysisNote": "La clave 'pass-back' también: se retiró bajo un parte distinto y se usó desde un host con identidad de administrador. Solo Elías Royce posee esa identidad.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 308,
+      "caseId": 2,
+      "type": "physical",
+      "act": 3,
+      "title": "Relé del aparcamiento",
+      "location": "Vestíbulo visitantes, plaza P-12",
+      "summary": "Un dispositivo repetidor bajo un coche que respondió a la notificación de segundo factor antes de que la red la cortara.",
+      "analysisNote": "Quien montó el segundo factor dejó un receptor físico. Combina con el calzado térmico del termográfico.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 309,
+      "caseId": 2,
+      "type": "trace",
+      "act": 3,
+      "title": "Botas de suela térmica",
+      "location": "Termográfica del corredor de la bóveda",
+      "summary": "El termográfico muestra a una figura cruzando a las 23:14 con botas de suela térmica retráctiles, un modelo vendido en una tienda local… compradas a nombre de Royce el mes pasado.",
+      "analysisNote": "Coincidencia positiva con la compra reciente de Elías Royce. El arquetipo de la figura coincide con su complexión.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 401,
+      "caseId": 3,
+      "type": "digital",
+      "act": 1,
+      "title": "Cámara del vestíbulo",
+      "location": "Seguridad del Hotel 404",
+      "summary": "Cobertura continua de la recepción. Odile March permanece tras el mostrador toda la noche.",
+      "analysisNote": "La recepcionista de noche queda descartada por las imágenes.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 402,
+      "caseId": 3,
+      "type": "physical",
+      "act": 2,
+      "title": "Segunda copa de champán",
+      "location": "Fregadero de la habitación 21, fuera de la bandeja",
+      "summary": "Una segunda copa, fría, fuera de la bandeja estándar de la habitación. Esta tarifa solo incluye una copa.",
+      "analysisNote": "Alguien más estuvo en la habitación. El contenido de la copa coincide con la bebida de la víctima: es la copa del crimen.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 403,
+      "caseId": 3,
+      "type": "testimony",
+      "act": 1,
+      "title": "Entrada de Calloway en el registro",
+      "location": "Diario de recepción",
+      "summary": "'La Sra. Calloway' se registró ayer… pero no hay entrada, escaneo de DNI ni fianza.",
+      "analysisNote": "Nunca hizo check-in real. Su habitación se pagó por un 'error' en efectivo.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 404,
+      "caseId": 3,
+      "type": "physical",
+      "act": 3,
+      "title": "Cartera vacía en el armario",
+      "location": "Habitación de Calloway, cajón del armario",
+      "summary": "La cartera de Ashworth —efectivo y tarjetas fuera— escondida bajo una manta de repuesto en su armario.",
+      "analysisNote": "Conexión directa entre la víctima y la huésped contigua.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 405,
+      "caseId": 3,
+      "type": "digital",
+      "act": 2,
+      "title": "Desactivación de la tarjeta de puerta",
+      "location": "Sistema de llaves del hotel",
+      "summary": "La tarjeta de la 21 se desactivó a las 6:03, después de que el gerente ya entrara con la maestra.",
+      "analysisNote": "Solo el personal puede desactivar tarjetas. Odile está en recepción y Finn tiene la maestra, ambos cubiertos por cámaras.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 406,
+      "caseId": 3,
+      "type": "digital",
+      "act": 1,
+      "title": "Recorrido de la carretilla del hielo",
+      "location": "Cámara del pasillo de la planta 2",
+      "summary": "La carretilla de Finn Bauer aparece en cada parada. Entra una sola vez en la 21, a las 23:30, y sale un minuto después.",
+      "analysisNote": "La cronología del botones es perfecta y confirmada por cámara. Descartado.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 407,
+      "caseId": 3,
+      "type": "trace",
+      "act": 3,
+      "title": "Huella en la botella",
+      "location": "Botella del minibar de la 21",
+      "summary": "Una huella reciente y única en la botella de champán: coincide con uno de los alias conocidos de 'la Sra. Calloway' en el patrón estatal.",
+      "analysisNote": "Definitiva: estuvo manipulando la botella dentro de la habitación.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 408,
+      "caseId": 3,
+      "type": "trace",
+      "act": 1,
+      "title": "Polvo de la ventana del patio",
+      "location": "Ventana de la habitación 21",
+      "summary": "Ventana abierta al patio de incendios con polvo intacto en los rieles y sin marcas de fricción.",
+      "analysisNote": "Nadie entró ni salió por la ventana. Solo pudo usarse como cortina de humo.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 409,
+      "caseId": 3,
+      "type": "testimony",
+      "act": 1,
+      "title": "Declaración de Finn",
+      "location": "Interrogatorio",
+      "summary": "Confirmó la entrega del hielo y recordó que la puerta de la 21 'no estaba cerrada del todo' cuando pasó la primera vez, a las 23:20.",
+      "analysisNote": "Dato destacable: la puerta no estaba sellada en ese momento. La llave de la mesita llegó después.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 501,
+      "caseId": 4,
+      "type": "testimony",
+      "act": 1,
+      "title": "Informe de toxicología",
+      "location": "Forense",
+      "summary": "Digitalina en el vino de la copa y en los pétalos de las rosas del camerino. Se trata de un envenenamiento deliberado.",
+      "analysisNote": "La dosis es demasiado precisa para ser accidental: alguien conocía la afección cardiaca de Aurora.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 502,
+      "caseId": 4,
+      "type": "document",
+      "act": 1,
+      "title": "Programa de gala",
+      "location": "Cartel del teatro",
+      "summary": "El programa anuncia a Aurora Valente como estrella solista y ningún suplente en el reparto visible.",
+      "analysisNote": "Nada relevante. Todos los implicados estaban mencionados de alguna forma en la obra.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 503,
+      "caseId": 4,
+      "type": "digital",
+      "act": 2,
+      "title": "Mensaje de advertencia anónimo",
+      "location": "Teléfono del ayudante de escena",
+      "summary": "'Quien no cante mañana, salva la voz.' Recibido la noche anterior a la función, remitente enmascarado.",
+      "analysisNote": "La dirección del texto y su timbre apuntan a alguien del entorno teatral, no a un extraño.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 504,
+      "caseId": 4,
+      "type": "trace",
+      "act": 2,
+      "title": "Ampolleta de digitalina",
+      "location": "En el dobladillo del vestuario del reparto",
+      "summary": "Un vial de vidrio con residuos de digitalina, la misma sustancia del vino. Encontrado en el bajo de un vestido.",
+      "analysisNote": "Confirma dónde se preparó el veneno, pero no quién lo dejó: la cadena definitiva la cierra el ramo.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 505,
+      "caseId": 4,
+      "type": "digital",
+      "act": 1,
+      "title": "Cámara del pasillo de camerinos",
+      "location": "Teatro Círculo, planta de camerinos",
+      "summary": "Registro de toda la noche: el ramo institucional llega a las 21:40 y un segundo ramo 'sustituto' a las 21:55.",
+      "analysisNote": "Dos ramos y dos mensajeros distintos en el mismo pasillo: el ramo final no está bajo control del teatro.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 506,
+      "caseId": 4,
+      "type": "digital",
+      "act": 3,
+      "title": "Cambio de flores filmado",
+      "location": "Cámara del pasillo de camerinos",
+      "summary": "A las 21:55, una figura con gorro cambia el ramo institucional por otro más pequeño mientras la cámara sufre un fugaz corte.",
+      "analysisNote": "La figura desaparece en el segundo exacto del corte de imagen. El corte técnico es altamente sospechoso.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 507,
+      "caseId": 4,
+      "type": "testimony",
+      "act": 1,
+      "title": "Doble afección de Aurora",
+      "location": "Historial clínico aportado por su asistente",
+      "summary": "Aurora padecía una arritmia benigna conocida por muy pocas personas del equipo.",
+      "analysisNote": "Solo el entorno íntimo conocía su medicación y el riesgo: el círculo de sospechosos se cierra aquí.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 508,
+      "caseId": 4,
+      "type": "physical",
+      "act": 3,
+      "title": "Ramo sustituto y pétalos",
+      "location": "Camerino de Aurora, sobre la mesa",
+      "summary": "Los pétalos de las rosas están impregnados de la misma digitalina. La impregnación es previa a la entrada en camerino.",
+      "analysisNote": "El veneno llegó con las flores: quien cambió el ramo es quien envenenó la escena.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 509,
+      "caseId": 4,
+      "type": "testimony",
+      "act": 1,
+      "title": "Declaración del maquillador",
+      "location": "Comisaría",
+      "summary": "Aurora le confesó hace un mes que 'el teatro quiere renovarme el papel' y que 'hay quien espera el puesto'.",
+      "analysisNote": "Contexto: la presión por el reparto era conocida entre bambalinas.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 601,
+      "caseId": 5,
+      "type": "digital",
+      "act": 1,
+      "title": "Cámara del pasillo del coche B",
+      "location": "Tren Alfa-9",
+      "summary": "Registro continuo: la cámara está desplazada unos grados exactamente en el tramo frente a los compartimentos 3 y 4.",
+      "analysisNote": "El desajuste es deliberado y coincide con el acceso de una pértiga desde el aseo contiguo.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 602,
+      "caseId": 5,
+      "type": "document",
+      "act": 2,
+      "title": "Carta de ultimátum sin enviar",
+      "location": "Maletín de Aldana",
+      "summary": "Borrón de una carta: 'Si no devuelves lo desviado, la auditoría va al fiscal'.",
+      "analysisNote": "Dirigida a alguien del bufete. El tono y el destinatario son la clave del conflicto.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 603,
+      "caseId": 5,
+      "type": "document",
+      "act": 2,
+      "title": "Copia de la auditoría",
+      "location": "Maletín de Aldana, carpeta separada",
+      "summary": "La única copia del informe que reunía las irregularidades del bufete. Faltan dos folios finales.",
+      "analysisNote": "Dos folios eliminados: el autor conocía el informe y protegió su propia sección.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 604,
+      "caseId": 5,
+      "type": "digital",
+      "act": 1,
+      "title": "Concesión del azafata",
+      "location": "Registro de servicio del tren",
+      "summary": "La azafata registra que la puerta 4 'debía de estar sin pestillo' a las 12:40, minutos antes del hallazgo.",
+      "analysisNote": "Detalle que contradice la versión de cerradura impecable: la puerta fue abierta desde dentro.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 605,
+      "caseId": 5,
+      "type": "physical",
+      "act": 3,
+      "title": "Lámina de la puerta",
+      "location": "Bisagra interior del compartimento 4",
+      "summary": "Huella parcial en la lámina de refuerzo de la cerradura, de un guante fino y un óxido característico.",
+      "analysisNote": "Coincide con el óxido del óxido metálico que se vende en las ferreterías junto a la estación.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 606,
+      "caseId": 5,
+      "type": "digital",
+      "act": 2,
+      "title": "Billete sin asiento",
+      "location": "Registro del revisor",
+      "summary": "Un billete pagado en efectivo sin número de asiento en el coche B, correspondiente a la parada anterior al suceso.",
+      "analysisNote": "El portador no subió jamás al tren desde esa parada: un pasajero 'fantasma' viajó o fingió viajar.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 607,
+      "caseId": 5,
+      "type": "physical",
+      "act": 3,
+      "title": "Pértiga del aseo",
+      "location": "Aseo contiguo del coche B",
+      "summary": "Una pértiga de limpieza con marcas de fricción frescas y una fibra del pasillo.",
+      "analysisNote": "El instrumento que movió la cámara. La fibra coincide con la alfombra del pasillo del coche B.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 608,
+      "caseId": 5,
+      "type": "trace",
+      "act": 1,
+      "title": "Fibra del anorak",
+      "location": "Cierre del maletín de Aldana",
+      "summary": "Una fibra de poliéster azul en el cierre del maletín que no pertenece a ningún pasajero del coche B… según el revisor.",
+      "analysisNote": "Hasta que no se identifique la fibra, apenas orienta: quizá alguien registró el maletín.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 609,
+      "caseId": 5,
+      "type": "testimony",
+      "act": 1,
+      "title": "Declaración de Marta",
+      "location": "Interrogatorio",
+      "summary": "'Papá insistía en que había quien robaba en el despacho. Llevaba el informe como una bala.'",
+      "analysisNote": "Confirma el conflicto de fondo, no la autoría. La hija se muestra leal pero esquiva.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 701,
+      "caseId": 6,
+      "type": "document",
+      "act": 1,
+      "title": "Informe de bomberos",
+      "location": "Parque municipal 3",
+      "summary": "Tres focos simultáneos en el depósito de legajos con acelerante de combustión química profesional.",
+      "analysisNote": "Un incendio provocado con método: delimitado, rápido y con hora elegida.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 702,
+      "caseId": 6,
+      "type": "digital",
+      "act": 1,
+      "title": "Cámara del garaje",
+      "location": "Biblioteca, planta sótano",
+      "summary": "Registro de las 2:10: el vigilante dormido en su puesto, sin ronda hasta las camillas.",
+      "analysisNote": "Negligencia del vigilante, no autoría: no salió del garaje en toda la noche.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 703,
+      "caseId": 6,
+      "type": "digital",
+      "act": 2,
+      "title": "Transferencia inmobiliaria",
+      "location": "Ficheros contables de la biblioteca",
+      "summary": "Transferencia de 50.000 € desde la sociedad de Nicolás Ferrán a una cuenta personal de reciente creación, apenas dos días antes del incendio.",
+      "analysisNote": "Ningún contrato municipal justifica esa cifra. Es el puente económico entre la inmobiliaria y el archivo.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 704,
+      "caseId": 6,
+      "type": "physical",
+      "act": 1,
+      "title": "Bidón del acelerante",
+      "location": "Cerca de la taquilla de conserjería",
+      "summary": "Un bidón vacío con la marca del acelerante. Pertenece a una flota profesional externa.",
+      "analysisNote": "No pertenece al inventario de la biblioteca: entró desde fuera, la noche del fuego.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 705,
+      "caseId": 6,
+      "type": "trace",
+      "act": 3,
+      "title": "Restos de acelerante en suelas",
+      "location": "Suelas de los zapatos técnicos del depósito",
+      "summary": "El calzado técnico de uso interno conserva restos del acelerante y partículas de la moqueta del depósito.",
+      "analysisNote": "El portador estuvo dentro del depósito con el acelerante: es el mismo que abrió con la llave maestra.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 706,
+      "caseId": 6,
+      "type": "digital",
+      "act": 3,
+      "title": "Cámara de la calle",
+      "location": "Frente a la biblioteca",
+      "summary": "A las 2:40, una furgoneta con el logotipo de la sociedad de Ferrán pasa frente a la entrada y frena unos segundos.",
+      "analysisNote": "Relación visual entre la inmobiliaria y la escena el mismo día del incendio.",
+      "relevant": true,
+      "secure": true
+    },
+    {
+      "id": 707,
+      "caseId": 6,
+      "type": "document",
+      "act": 2,
+      "title": "Registro de accesos al depósito",
+      "location": "Registro de llaves de la biblioteca",
+      "summary": "La llave maestra se retiró fuera de horario y se devolvió 'sin registro' 18 horas después.",
+      "analysisNote": "Confirma el acceso, no la autoría: la suela con acelerante y la transferencia cierran el caso.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 708,
+      "caseId": 6,
+      "type": "testimony",
+      "act": 1,
+      "title": "Declaración de la becaria",
+      "location": "Comisaría",
+      "summary": "Sira Bell entregó copias digitales de las escrituras 'por previsión' la tarde anterior.",
+      "analysisNote": "La copia digital salva el expediente: el fuego pudo ser una derrota estratégica.",
+      "relevant": false,
+      "secure": true
+    },
+    {
+      "id": 709,
+      "caseId": 6,
+      "type": "physical",
+      "act": 1,
+      "title": "Llave del depósito extraviada",
+      "location": "Fondo del archivador de la directora",
+      "summary": "La llave de respaldo del depósito, que según el inventario estaba 'en el cajón de la directora', aparece duplicada en el archivo de llaves.",
+      "analysisNote": "Una copia no registrada: aumenta el círculo de quién pudo entrar, pero no identifica a su portador.",
+      "relevant": false,
+      "secure": true
+    }
+  ],
+  "results": []
+}

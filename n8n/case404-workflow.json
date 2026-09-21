@@ -1,0 +1,194 @@
+{
+  "name": "CASE 404 — Investigation Processing",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "case-404",
+        "responseMode": "responseNode",
+        "options": {
+          "responseHeaders": {}
+        },
+        "requireAuth": false,
+        "rawJson": false
+      },
+      "id": "e0f7c9a1-0001-4f2b-8a6e-1c2d3e4f5a60",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [-420, 0],
+      "webhookId": "case-404-webhook-0001"
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $input.first().json;\n\nconst required = [\n  'playerId',\n  'playerName',\n  'caseId',\n  'caseName',\n  'score',\n  'accuracy',\n  'timeUsed',\n  'rank',\n  'solved',\n];\n\nconst missing = required.filter(\n  (field) => item[field] === undefined || item[field] === null || item[field] === ''\n);\n\nif (missing.length > 0) {\n  throw new Error(`Invalid payload. Missing fields: ${missing.join(', ')}`);\n}\n\nconst score = Math.max(0, Math.round(Number(item.score)));\nconst normalizedScore = Math.min(100, Math.max(0, Math.round(Number(item.accuracy) || 0)));\n\nreturn {\n  json: {\n    ...item,\n    score,\n    accuracy: normalizedScore,\n    performanceBucket: score >= 5000 ? 'ELITE' : 'STANDARD',\n    validated: true,\n    processedAt: new Date().toISOString(),\n  },\n};",
+        "mode": "runOnceForAllItems"
+      },
+      "id": "e0f7c9a1-0002-4f2b-8a6e-1c2d3e4f5a61",
+      "name": "Validate & Calculate Performance",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-220, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "e0f7c9a1-0003-4f2b-8a6e-1c2d3e4f5a62",
+              "leftValue": "={{ $json.score }}",
+              "rightValue": 5000,
+              "leftValueType": "value",
+              "rightValueType": "number",
+              "operator": {
+                "type": "number",
+                "operation": "gte",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "e0f7c9a1-0004-4f2b-8a6e-1c2d3e4f5a63",
+      "name": "Is Elite Performance?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [-40, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const payload = $input.first().json;\n\n/**\n * Local in-memory action: record the investigation for this execution.\n * In production, replace this node with a Google Sheets / Postgres table\n * to persist results — see README \"n8n\" section.\n */\nconst store = (global.__case404Store = global.__case404Store || { results: [] });\nstore.results.push({\n  ...payload,\n  storedAt: new Date().toISOString(),\n});\n\nreturn {\n  json: {\n    success: true,\n    message: 'Investigation processed successfully',\n    performance: 'ELITE',\n    score: payload.score,\n    rank: payload.rank,\n    stored: true,\n    recordIndex: store.results.length,\n  },\n};",
+        "mode": "runOnceForAllItems"
+      },
+      "id": "e0f7c9a1-0005-4f2b-8a6e-1c2d3e4f5a64",
+      "name": "Save Elite Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [160, -120]
+    },
+    {
+      "parameters": {
+        "jsCode": "const payload = $input.first().json;\n\nconst store = (global.__case404Store = global.__case404Store || { results: [] });\nstore.results.push({\n  ...payload,\n  storedAt: new Date().toISOString(),\n});\n\nreturn {\n  json: {\n    success: true,\n    message: 'Investigation processed successfully',\n    performance: 'STANDARD',\n    score: payload.score,\n    rank: payload.rank,\n    stored: true,\n    recordIndex: store.results.length,\n  },\n};",
+        "mode": "runOnceForAllItems"
+      },
+      "id": "e0f7c9a1-0006-4f2b-8a6e-1c2d3e4f5a65",
+      "name": "Save Standard Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [160, 120]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 200,
+          "responseHeaders": {}
+        }
+      },
+      "id": "e0f7c9a1-0007-4f2b-8a6e-1c2d3e4f5a66",
+      "name": "Respond to Webhook (Elite)",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [380, -120]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 200,
+          "responseHeaders": {}
+        }
+      },
+      "id": "e0f7c9a1-0008-4f2b-8a6e-1c2d3e4f5a67",
+      "name": "Respond to Webhook (Standard)",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [380, 120]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate & Calculate Performance",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate & Calculate Performance": {
+      "main": [
+        [
+          {
+            "node": "Is Elite Performance?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Elite Performance?": {
+      "main": [
+        [
+          {
+            "node": "Save Elite Result",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Save Standard Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save Elite Result": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook (Elite)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save Standard Result": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook (Standard)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "case404"
+  },
+  "tags": [],
+  "active": false,
+  "id": "case-404-investigation-workflow"
+}

@@ -1,0 +1,58 @@
+/* Contrast guardrails: foreground/background pairs are explicit, not inherited. */
+:root { --text: #f7f1e4; --text-dim: #d8d0bf; --text-faint: #aaa18e; }
+
+.panel, .iq-suspect-head, .iq-conversation, .iq-suggestions, .iq-meter,
+.iq-rail-btn, .asked-card, .iq-entry, .modal-content, .notification {
+  color: #f7f1e4;
+}
+
+.panel .muted, .iq-suspect-info .muted, .iq-hint, .iq-q, .iq-note,
+.iq-case-note, .iq-rail-meta span, .asked-q, .iq-empty-log, .page-desc {
+  color: #d8d0bf !important;
+}
+
+.briefing, .case-folder-home, .case-file, .desk-clippings { color: #242019; }
+.briefing .muted, .briefing .page-desc, .briefing .page-kicker { color: #514937 !important; }
+.briefing .panel-title, .briefing h1, .briefing h2, .briefing h3 { color: #242019; }
+
+/* The briefing is paper, but its fact slips are deliberately dark: never inherit paper ink. */
+.briefing .briefing-fact {
+  background: #302e27 !important;
+  border: 1px solid #5d5848 !important;
+  color: #fff9ed !important;
+}
+.briefing .briefing-fact b { color: #fff9ed !important; }
+.briefing .briefing-fact span { color: #e1d6bd !important; }
+.briefing .briefing-objective { background: #f0dfb8; border-color: #9d7b3a; color: #29231a; }
+.briefing .briefing-objective .muted { color: #3f382b !important; }
+
+/* Tags must retain contrast regardless of an old component colour token. */
+[data-tone='green'], .tag-green { color: #102012 !important; background: #b4c19f !important; }
+[data-tone='amber'], .tag-amber { color: #251b09 !important; background: #e0c27f !important; }
+[data-tone='orange'] { color: #2c180b !important; background: #e4a66d !important; }
+[data-tone='violet'] { color: #221a19 !important; background: #c5aea1 !important; }
+[data-tone='red'] { color: #fff8ed !important; background: #813633 !important; }
+
+.iq-reaction-chip:not([data-tone]), .iq-chat:not([data-tone]) { color: #201d16; background: #d6c49a; }
+.btn-ghost, .intel-tab, .side-link { color: #eee6d5; }
+.btn-ghost:hover, .intel-tab.active, .side-link.active { color: #fffaf0; background: #3b382e; }
+.page-kicker, .file-index, .folder-code { color: #d9b66e; }
+.case-file .file-index, .case-file .folder-code { color: #654e25; }
+
+/* Interactive crime scene: the objects come before the interrogation. */
+.crime-scene { margin: 22px 0; background: #25231d; border: 1px solid #5c5747; box-shadow: var(--shadow); }
+.crime-scene-head { display:flex; justify-content:space-between; gap:18px; align-items:end; padding:18px 20px; }
+.crime-scene-head h2 { margin-top:3px; color:#fff9ed; font-size:23px; }.crime-scene-head p { margin:0; display:flex; align-items:center; gap:7px; color:#e2c88e; font:700 11px var(--font-mono); }
+.crime-scene-view { position:relative; min-height:340px; overflow:hidden; background:linear-gradient(125deg,rgba(18,24,22,.18),rgba(10,9,7,.76)),linear-gradient(0deg,#302017 0 28%,#485150 28% 30%,#1f2827 30%); border-top:1px solid #575143; border-bottom:1px solid #575143; }
+.scene-light { position:absolute; width:360px; height:270px; left:10%; top:-80px; background:radial-gradient(ellipse,rgba(234,186,91,.32),transparent 68%); }.scene-window { position:absolute; right:9%; top:12%; width:150px; height:170px; border:9px solid #24231d; background:repeating-linear-gradient(110deg,rgba(211,230,223,.32) 0 1px,transparent 2px 22px),#263638; }.scene-desk { position:absolute; left:22%; bottom:8%; width:42%; height:27%; background:linear-gradient(9deg,#21150f,#59402d); transform:skewX(-10deg); box-shadow:0 13px 18px rgba(0,0,0,.5); }
+.scene-hotspot { position:absolute; z-index:2; display:flex; align-items:center; gap:6px; border:1px solid rgba(232,208,152,.7); background:rgba(20,22,19,.9); color:#fff8e8; padding:7px 9px; font:700 10px var(--font-mono); letter-spacing:.06em; box-shadow:0 3px 12px rgba(0,0,0,.45); }.scene-hotspot:hover:not(:disabled),.scene-hotspot:focus-visible { background:#d1b46f; color:#211b10; border-color:#fff1bb; }.scene-hotspot.examined { background:#4f634c; border-color:#b8c7a7; color:#fff; }.scene-hotspot span { display:grid; place-items:center; width:17px; height:17px; border-radius:50%; background:#a57e3d; color:#18150f; }.scene-hotspot.examined span { background:#d7e4cc; color:#213020; }.scene-hotspot.body{left:10%;bottom:18%}.scene-hotspot.window{right:7%;top:17%}.scene-hotspot.desk{left:43%;bottom:21%}.scene-hotspot.floor{left:28%;bottom:7%}.scene-hotspot.phone{left:55%;top:52%}.scene-hotspot.weapon{right:31%;bottom:11%}.scene-empty{position:absolute;inset:0;display:grid;place-content:center;gap:8px;color:#f8f0dc;text-align:center}.crime-scene-note{margin:0;padding:12px 20px;color:#ded4bd;background:#302e27;font-size:13px}
+
+/* Strong visual keyboard focus remains readable on light and dark surfaces. */
+:focus-visible { outline: 3px solid #f0c96e; outline-offset: 3px; }
+
+@media (prefers-contrast: more) {
+  :root { --text: #fff; --text-dim: #fff; --text-faint: #e5e0d6; }
+  .panel, .iq-suspect-head, .iq-conversation, .iq-suggestions, .iq-meter { border-color: #d9d1bd; }
+}
+
+@media (max-width: 650px) { .crime-scene-head { align-items:start; flex-direction:column; }.crime-scene-view { min-height:390px; }.scene-hotspot { font-size:9px; }.scene-hotspot.desk { left:35%; }.scene-hotspot.phone { left:45%; }.scene-hotspot.weapon { right:18%; } }
